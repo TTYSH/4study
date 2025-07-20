@@ -1,0 +1,74 @@
+<!-- Người thực hiện: Trần Ngọc Hân -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/4S_favicon_removed.png">
+    <link rel="stylesheet" href="/csschung/base.css">
+    <link rel="stylesheet" href="/csschung/responsive.css">
+    <link rel="stylesheet" href="/dangnhap/dangnhap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Đăng nhập</title>
+</head>
+<body  @media screen and (max-width: 600px) >
+    <main class="container" >
+        <div class="form-container"> 
+            <form action="dangnhap.html" method="get" id="form-2">
+                <div class="row">
+                    <h2>ĐĂNG NHẬP</h2>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="email">EMAIL</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="email" name="email" placeholder="Nhập email" required id="email" class="form-control">
+                        <p class="form-message"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="password">MẬT KHẨU</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="password" name="password" id="password" placeholder="Nhập mật khẩu" class="form-control">
+                        <p class="form-message"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-75">
+                        <input type="checkbox" name="rmb-passwd" id="rmb-passwd">
+                        <label for="rmb-passwd"> Nhớ mật khẩu</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <p>Bạn chưa có tài khoản? <a href="/dangky/dangky.html">Đăng ký ngay</a>.</p>
+                </div>
+                
+                <div class="row">
+                    <a href="/trangchu/trangchu.html" class="back">
+                        <i class="fa-solid fa-house"></i>
+                        Trở về trang chủ
+                    </a>
+                    <button class="button-dky btn">ĐĂNG NHẬP</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+<script src="/dangky/validator.js"></script>
+<script>
+    Validator({
+        form: '#form-2',
+        errorMessage: '.form-message',
+        rules: [
+            Validator.isRequired('#email'),
+            Validator.isRequired('#password')
+        ], 
+        onSubmit: function (data) {
+            userSignIn(data);
+        }
+    })
+</script>
+</html>

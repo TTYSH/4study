@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Pics/4S_favicon_removed.png">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="trangchu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Trang chủ</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navbar__logo">
+                <li>
+                   <a href="trangchu.html" class="navbar__logo-link">
+                    <img src="Pics/4Study_Logo_remove.png" alt="" class="navbar__logo-img">
+                    </a> 
+                </li>
+            </ul>
+            <ul class="navbar__list">
+                <li class="navbar__items">
+                    <a href="#trangchu" class="navbar__link active">TRANG CHỦ</a>
+                </li>
+                <li class="navbar__items">
+                    <a href="#" class="navbar__link">KHÓA HỌC</a>
+                </li>
+                <li class="navbar__items">
+                    <a href="/danhsachdadangky/dadangky.html" class="navbar__link">HỌC TẬP</a>
+                </li>
+                <!--
+                <li class="navbar__items">
+                    <a href="/dangky/dangky.html" class="navbar__link">ĐĂNG KÝ</a>
+                </li>
+                -->
+                <li class="navbar__items">
+                    <a href="/dangnhap/dangnhap.html" class="navbar__link">ĐĂNG NHẬP</a>
+                </li>
+                <div class="line"></div>
+            </ul>
+        </nav>
+    </header>
+    <main class="grid_block" id="trangchu">
+        <div class="search">
+            <input type="text" placeholder="Nhập nội dung tìm kiếm" class="search">
+            <button class="search">
+                <i class="fa fa-search" aria-hidden="true" class="search"></i>
+            </button>
+        </div>
+        <section class="slider">
+            <div class="slider-container">
+                <div class="slides" id="slides">
+                    <div class="slide"><img src="Pics/home_image1.png" alt="Ảnh 1"></div>
+                    <div class="slide"><img src="Pics/home_image2.png" alt="Ảnh 2"></div>
+                </div>
+            </div>
+
+            <div class="dots">
+                <span class="dot active" onclick="manualSlide(0)"></span>
+                <span class="dot" onclick="manualSlide(1)"></span>
+            </div>
+        </section>
+        <div class="intro">
+            <h1 class="title">Giới thiệu về 4Study</h1>
+            <p class="intro__description">
+                Chào mừng bạn đến với <strong>4Study</strong> – nền tảng học tập trực tuyến dành riêng cho học sinh trung học phổ thông. 
+                Tại đây, bạn có thể dễ dàng tiếp cận kiến thức các môn học trọng tâm như <strong>Toán học</strong>, <strong>Vật lý</strong>, 
+                <strong>Hóa học</strong> và <strong>Tiếng Anh</strong> một cách trực quan, sinh động và dễ hiểu.
+            </p>
+            <p class="intro__description">
+                Với mục tiêu hỗ trợ bạn trong việc củng cố kiến thức và chuẩn bị tốt cho các kỳ thi, 
+                4Study cung cấp hệ thống bài giảng ngắn gọn, các ví dụ minh họa rõ ràng, cùng các bài tập thực hành đa dạng. 
+                Giao diện đơn giản, dễ sử dụng giúp bạn tập trung tối đa vào việc học.
+            </p>
+            <p class="intro__description">
+                Hãy bắt đầu hành trình học tập hiệu quả ngay hôm nay cùng 4Study – bạn đồng hành đáng tin cậy trên con đường chinh phục tri thức!
+            </p>
+        </div>
+        <div class="main_content">
+            <div class="one">
+                <div class="img">
+                    <a href="#"><img src="Pics/Toan11_image.png" alt="Math" class="subjects"></a>
+                </div>
+                <div class="content">
+                    <a href="#" class="details">Xem chi tiết</a>
+                </div>
+            </div>
+
+            <div class="two">
+                <div class="img">
+                    <a href="#"><img src="Pics/VatLy_imgage.png" alt="Physics" class="subjects"></a>  
+                </div>
+                <div class="content">
+                    <a href="#" class="details">Xem chi tiết</a>
+                </div>
+            </div>
+
+            <div class="three">
+                <div class="img">
+                    <a href="#"><img src="Pics/HoaHoc12_image.png" alt="Chemistry" class="subjects"></a>  
+                </div>
+                <div class="content">
+                    <a href="#" class="details">Xem chi tiết</a>
+                </div>
+            </div>
+
+            <div class="four">
+                <div class="img">
+                    <a href="#"><img src="Pics/EngLish.png" alt="AV" class="subjects"></a>
+                </div>
+                <div class="content">
+                    <a href="#" class="details">Xem chi tiết</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <section class="footer__content">
+            <div class="footer__left">
+                <div class="footer__logo">
+                    <img src="Pics/4Study_Logo_remove.png" alt="" height="100px" width="150px">
+                </div>
+
+                <p class="footer__description">
+                    Trang web 4Study là một trong những nền tảng ưu việt hỗ
+                    trợ học tập tốt cho các bạn học sinh. Với sự chú tâm về lượng kiến thức,
+                    đảm bảo sự hiểu biết, chúng tôi mong muốn mang đến cho các bạn những trải nghiệm
+                    tốt nhất và đạt hiệu quả cao nhất trong học tập.
+                </p>
+            </div>
+
+            <div class="footer__right">
+                <div class="social">
+                    <h2 class="title">Trang thông tin liên hệ</h2>
+                    <ul class="social__list">
+                        <li class="social__items">
+                            <a href="" class="social__link">
+                                <i class="fa-brands fa-square-facebook social__logo" ></i>
+                                4Study Courses
+                            </a>
+                        </li>
+                        <li class="social__items">
+                            <a href="" class="social__link">
+                                <i class="fa-solid fa-envelope social__logo" ></i>
+                                4StudySupport@gmail.com
+                            </a>
+                        </li>
+                        <li class="social__items">
+                            <a href="" class="social__link">
+                                <i class="fa-brands fa-square-google-plus social__logo"></i>
+                                4Study.com
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="social">
+                    <h2 class="title">Chăm sóc khách hàng</h2>
+                    <ul class="social__list">
+                        <li class="social__items">
+                            <a href="" class="social__link">
+                                Chính sách bảo hành
+                            </a>
+                        </li>
+                        <li class="social__items">
+                            <a href="" class="social__link">
+                                Chính sách bảo
+                            </a>
+                        </li>
+                        <li class="social__items">
+                            <a href="" class="social__link">
+                                Điều khoản giao dịch chung
+                            </a>
+                        </li>
+                        <li class="social__items">
+                            <a href="" class="social__link">
+                                Hỗ trợ & trợ giúp
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <a href="" class="to_top"></a>
+    </footer>
+</body>
+<script src="main.js"></script>
+</html>

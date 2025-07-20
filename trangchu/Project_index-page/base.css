@@ -1,0 +1,182 @@
+/*---Import font---*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Luu tru nhung bien dung chung
+de dung cac bien nay bang cach  => var(<tenbien>)*/
+
+:root {/*Định dạng trang web*/
+    --primary-color: #0d47a1;  /*mau chu de cua web*/
+    --text-color: #333;         /*mau chu binh thuong*/
+    --background-color: rgba(0, 0, 0, 0.011);       /*background khac mau trang*/
+    --height-navbar: 50px;          /*chieu cao thanh navbar*/
+    --background-footer: #faf7f7;       /*mau footer*/
+    --primary-width: 1400px;            /*chieu dai chung cua trang web*/
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    font-family: "Roboto Condensed", sans-serif;
+    scroll-behavior: smooth;
+}
+
+/*Thanh phan trong cua web => them vao class de su dung*/
+.container {
+    height: 1000px;
+    top: calc(var(--height-navbar) + 20px);
+    max-width: var(--primary-width);
+    margin: auto;
+    font-size: 1.6rem;
+    padding: 0px 12px;
+}
+
+/*Dinh dang font chu cho tieu dde*/
+.title {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+/*---CSS Header---*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: var(--height-navbar);
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.904);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.08);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 5px 0px;
+    max-width: var(--primary-width);
+}
+
+.navbar__logo {
+    list-style: none;
+}
+
+.navbar__logo-img {
+    height: var(--height-navbar);
+    transform: scale(1.5);
+    object-fit: contain;
+}
+
+.navbar__list {
+    position: relative;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    height: calc(var(--height-navbar) - 4px);
+}
+
+.navbar__items {
+    padding: 8px 16px;
+}
+
+.navbar__logo-link,
+.navbar__link{
+    font-weight: 500;
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.navbar__link:hover {
+    color: var(--primary-color);
+}
+
+.active {
+    color: var(--primary-color);
+}
+
+.navbar__list .line {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 129px;
+    background-color: var(--primary-color);
+    height: 4px;
+    border-radius: 5px;
+    transition: left .12s linear;
+}
+
+
+/*----CSS footer---*/
+footer {
+    max-height: 200px;
+    padding: 32px 12px;
+    background-color: var(--background-footer);
+}
+
+.footer__content {
+    display: flex;
+    max-width: var(--primary-width);
+    margin: auto;
+}
+
+.footer__left {
+    display: flex;
+    flex: 1;
+    padding-right: 24px;
+    text-align: justify;
+}
+
+.footer__logo {
+    height: 70px;
+    width: 100%;
+    object-fit: contain;
+}
+
+.footer__description {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    line-height: 1.9rem;
+    letter-spacing: 1px;
+}
+
+.footer__right {
+    flex: 1;
+    display: flex;
+}
+/*----Footer social-----*/
+.social {
+    padding: 0px 12px;
+    width: 50%;
+}
+
+.social .title {
+    margin-bottom: 12px;
+}
+
+.social__list {
+    list-style: none;
+}
+
+.social__items {
+    padding: 8px 0px;
+}
+
+.social__link {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: var(--text-color);
+}
+
+.social__link:hover {
+    color: #000;
+}
+
+.social__logo {
+    font-size: 1.8rem;
+    margin-right: 5px;
+}

@@ -1,0 +1,249 @@
+/* Người thực hiện: Trần Minh Thư */
+.top_chemistry {
+    background-image: linear-gradient(to left, #11498d, #0e2643);
+    /* border: 2px solid #0d47a1; */
+    border-radius: 10px;
+    display: flex;
+    gap: 30px;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px 0 #000, 0 2px 4px 0 #00000038;
+    width: 95%;
+    margin: auto;
+}
+
+.main_chemistry {
+    display: flex;
+    gap: 50px;
+    /* border: 1px solid #0d47a1; */
+    /* box-shadow: 0 2px 4px 0 #000, 0 2px 4px 0 #00000038; */
+    border-radius: 10px;
+}
+
+div.content {
+    padding: 10px 20px 0 20px;
+    line-height: 2;
+    font-size: 20px;
+}
+
+div.photo > img {
+    width: 400px;
+    margin: 40px 40px 0 0;
+    border: none;
+    border-radius: 10px;
+    /* box-shadow: 0 4px 8px 0 #000, 0 6px 10px 0 #000; */
+    filter:drop-shadow(2px 2px 5px black);
+}
+
+div.content > button {
+    background-color: #fb4848;
+    padding: 8px 12px;
+    margin-top: 25px;
+    border-radius: 5px;
+    border: none;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 16px;
+    color: #fff;
+    box-shadow: 2px 4px 4px #bd3636;
+}
+
+div.content > button > a {
+    text-decoration: none;
+    color: #fff;
+}
+
+div.content > button > a:hover {
+    color: #c5b9b9;
+}
+
+div.content > p > a {
+    text-decoration: none;
+    color:#0d47a1;
+    font-weight: bolder;
+    /* text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff; */
+    font-size: 16px;
+}
+
+div.content > p > a:hover {
+    color: #4487ec;
+}
+
+div.content > p {
+    text-align: justify;
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+#lienquan > p {
+    font-size: 18px;
+    font-weight: bolder;
+    margin-top: 5px;
+}
+
+#lienquan > p > a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 300;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 0 3px;
+    color: #fff;
+    background-color: rgba(245, 245, 245, 0.567);
+}
+
+#lienquan > p > a:hover {
+    color:#0d47a1;
+    font-weight: bold;
+}
+
+
+
+/*div.aside_chemistry {
+    border: 1px solid #0d47a1;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px 0 #000, 0 2px 4px 0 #00000038;
+    border-radius: 10px;
+}
+
+ div.aside_content {
+    padding: 20px;
+    line-height: 2;
+}
+
+div.aside_content > h2 {
+    font-size: 40px;
+    text-shadow: 4px 4px #0d47a1;
+}
+
+div.aside_content > h4 {
+    font-size: 18px;
+    text-decoration: line-through;
+}
+
+div.aside_content > .sales {
+    position: absolute;
+    right: 4%;
+    border: none;
+    background-color: #ffffffe1;
+    border-radius: 8px;
+    padding: 0 10px;
+    color: #bd3636;
+} */
+
+.gioithieu {
+    font-size: 18px;
+    margin: 50px 0;
+    border-radius: 5px;
+    /* background-color: rgba(255, 255, 255, 0.904); */
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    /* box-shadow: 0 4px 8px 0 #00000038, 0 4px 8px 0 #00000038; */
+}
+
+.gioithieu_photo > img {
+    width: 300px;
+    margin: 50px 100px 0 100px;
+    border-radius: 50px;
+}
+
+.gioithieu_content > ul > li{
+    width: 100%;
+    list-style-type: none;
+    border: 2px solid #0d47a1;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.gioithieu_content {
+    margin: 0 40px;
+    padding: 0 50px;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+.gioithieu_content > h3 {
+    text-align: center;
+    font-size: 35px;
+    color:#0d47a1;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.lotrinh > h3 {
+    text-align: center;
+    font-size: 35px;
+    color:#0d47a1;
+}
+
+.lotrinh_content {
+    font-size: 18px;
+    line-height: 1.6;
+    border: 2px solid #0d47a1;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.lotrinh_content > summary {
+    background-color: #0d47a1;
+    margin: 1px;
+    padding: 8px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.lotrinh_content ul {
+    padding: 0px 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .main_chemistry {
+        flex-direction: column-reverse;
+        gap: 2rem;
+    }
+
+    div.photo > img {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .gioithieu {
+        flex-direction: column;
+    }
+
+    .gioithieu_content {
+        padding: 2rem;
+    }
+
+    .gioithieu_photo {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .main_chemistry {
+        flex-direction: column-reverse;
+        gap: 2rem;
+    }
+
+    div.photo > img {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .gioithieu {
+        flex-direction: column;
+    }
+
+    .gioithieu_content {
+        padding: 2rem;
+    }
+
+    .gioithieu_photo {
+        display: none;
+    }
+}

@@ -1,0 +1,303 @@
+<!-- Người thực hiện: Trần Thị Thúy Hiền -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/4S_favicon_removed.png">
+    <link rel="stylesheet" href="/csschung/base.css">
+    <link rel="stylesheet" href="/danhsachdadangky/dadangky.css">
+    <link rel="stylesheet" href="/csschung/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Học tập</title>
+</head>
+<!-- Nguoi thuc hien: Tran Thi Thuy Hien -->
+<body onload="checkSelection()" class="page">
+    <header class="page-header">
+        <nav class="container header-navbar">
+            <a href="/trangchu/trangchu.html" class="header__logo-link">
+                <img src="/4Study_Logo_remove.png" alt="" class="header__logo">
+            </a>
+            <div class="navbar__list">
+                <a href="/trangchu/trangchu.html" class="navbar__link">Trang chủ</a>
+                <a href="/trangchu/trangchu.html" class="navbar__link">Khóa học</a>
+                <a href="/danhsachdadangky/dadangky.html" class="navbar__link  navbar--active">Học tập</a>
+                <a href="/dangnhap/dangnhap.html" class="navbar__link">Đăng nhập</a>
+            </div>
+            <div class="header__menu--mobile">
+                <i class="fa-solid fa-bars menu--icon"></i>
+                <div class="navbar__list--mobile hidden">
+                    <div class="navbar__close">
+                        <i class="fas fa-times navbar__close-icon"></i>
+                    </div>
+
+                    <a href="/trangchu/trangchu.html" class="navbar__link">Trang chủ</a>
+                    <a href="/trangchu/trangchu.html" class="navbar__link">Khóa học</a>
+                    <a href="/danhsachdadangky/dadangky.html" class="navbar__link navbar--active">Học tập</a>
+                    <a href="/dangnhap/dangnhap.html" class="navbar__link">Đăng nhập</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container page-main">
+        <article class="main-article">
+            <h2 class="main__title section__title--secondary">Danh sách khóa học</h2>
+            <div class="move__page">
+                <div class="bc" id="bc-1">Đã đăng ký</div>
+                <div class="bc" id="bc-2">Kiểm tra</div>
+                <div class="line"></div>
+            </div>
+            <!-- Hiển thị danh mục -->
+            <div id="show__page">
+                <!-- Danh mục danh sách khóa học -->
+                <div class="show-bc-1"> 
+                    
+                </div>
+                <!-- Danh mục kiểm tra-->
+                <div class="show-bc-2">
+                    
+                </div>
+            </div>
+        </article>
+        <aside class="aside__user">
+            <img src="/images/no_image.jpg" alt="" class="user__img">
+            <div class="aside__body user__info">
+                <h2 class="aside__title user__name">@user1</h2>
+                <p class="section__content user__description">Student</p>
+            </div>
+            <div class="user__archieve">
+                <p class="section__content archieve__content">Thành tích nổi bật</p>
+                <ol class="user__archive-list">
+                    <li class="section__content user__archieve-items">Đạt điểm tối đa cho phần kiểm tra Tiếng anh</li>
+                    <li class="section__content user__archieve-items">Nhất liên tiếp 2 bài tập Toán</li>
+                    <li class="section__content user__archieve-items">Giữ chuỗi nhiều nhất trong môn Lý</li>
+                </ol>
+            </div>
+        </aside>
+    </main>
+
+    <footer class="page-footer">
+        <article class="container footer-article">
+            <div class="footer__items">
+                <img src="/4Study_Logo_remove.png" alt="" class="footer__logo">
+                <p class="section__content">
+                    Trang web 4Study là một trong những nền tảng ưu việt hỗ
+                    trợ học tập tốt cho các bạn học sinh. Với sự chú tâm về lượng kiến thức,
+                    đảm bảo sự hiểu biết, chúng tôi mong muốn mang đến cho các bạn những trải nghiệm
+                    tốt nhất và đạt hiệu quả cao nhất trong học tập.
+                </p>
+            </div>
+
+            <div class="footer__items">
+                <h2 class="section__title section__title--secondary">Trang thông tin liên hệ</h2>
+                <ul class="social__list">
+                    <li class="social__items">
+                        <a href="" class="social__link">
+                            <i class="fa-brands fa-square-facebook social__logo" ></i>
+                            4Study Courses
+                        </a>
+                    </li>
+                    <li class="social__items">
+                        <a href="" class="social__link">
+                            <i class="fa-solid fa-envelope social__logo" ></i>
+                            4StudySupport@gmail.com
+                        </a>
+                    </li>
+                    <li class="social__items"> 
+                        <a href="" class="social__link">
+                            <i class="fa-brands fa-square-google-plus social__logo"></i>
+                            4Study.com
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__items">
+                <h2 class="section__title section__title--secondary">Chăm sóc khách hàng</h2>
+                <ul class="social__list">
+                    <li class="social__items">
+                        <a href="" class="social__link">
+                            Chính sách bảo hành
+                        </a>
+                    </li>
+                    <li class="social__items">
+                        <a href="" class="social__link">
+                            Điều khoản giao dịch chung
+                        </a>
+                    </li>
+                    <li class="social__items"> 
+                        <a href="" class="social__link">
+                            Liên hệ trao đổi & hợp tác
+                        </a>
+                    </li>
+                    <li class="social__items"> 
+                        <a href="" class="social__link">
+                            Hỗ trợ và trợ giúp
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </article>
+    </footer>
+</body>
+<script src="/csschung/main.js"></script>
+<script>
+// Khai bao bien
+    const bcButton = document.querySelectorAll('.bc');
+    const bc1 = document.getElementById('bc-1');
+    localStorage.setItem('bcActive', bc1.id);
+    const bc2 = document.getElementById('bc-2');
+    let bcActivePage = localStorage.getItem('bcActive');
+// lay du lieu cua danh sach khoa hoc da dang ky ve
+    let courses = JSON.parse(localStorage.getItem('courses')) || [];
+// Render danh sach khoa hoc
+    function renderCourse() {
+        let courseItem = ``;
+        courses.map(function(courses, index) {
+            courseItem += `
+                <div class="course__items" id="${courses.id}">
+                    <img src="/images/${courses.srcImg}.png" alt="" class="course__img">
+                    <div class="course-body">
+                        <h3 class="course__name">${courses.title} ${courses.course}</h3>
+                        <p class="course__cmt">${courses.actor}</p>
+                        <div class="course__button">
+                            <a href="${courses.path}" class="btn btn__check">Tiếp tục</a>
+                            <button class="btn btn__remove" onclick="removeCourse(${index})">Xóa</button>
+                        </div>
+                    </div>
+                </div>
+            `;
+        })
+        document.querySelector(`.show-bc-1`).innerHTML = courseItem;
+    }
+
+// Du lieu cai bai kiem tra tham khao
+    const list_test = [
+        {
+            id: 1,
+            srcImg: 'Toan.jpg',
+            name: 'Hàm số lượng giác và phương trình lượng giác.',
+            link: 'https://toanmath.com/ham-so-luong-giac-va-phuong-trinh-luong-giac',
+            score1: 150,
+            score2: 130,
+            joiner: 150
+        },
+        {
+            id: 2,
+            srcImg: 'physic (1).jpg',
+            name: 'Bài tập xoay chiều. Mức độ 3 - Vận dụng',
+            link: 'https://thuvienvatly.com/download/53566',
+            score1: 150,
+            score2: 130,
+            joiner: 150
+        },
+        {
+            id: 3,
+            srcImg: 'english (1).jpg',
+            name: 'Tổng hợp tài liệu tiếng anh',
+            link: 'https://tailieuonthi.org/tong-hop-tai-lieu-tieng-anh-co-vu-mai-phuong/',
+            score1: 150,
+            score2: 145,
+            joiner: 140
+        },
+        {
+            id: 4,
+            srcImg: 'chemistry (1).jpg',
+            name: 'Nguyên tố nhóm IA và IIA (Chương trình mới).',
+            link: 'https://tailieuonthi.org/tai-lieu-hoa-hoc-12-chuong-7-nguyen-to-nhom-ia-va-iia/',
+            score1: 147,
+            score2: 112,
+            joiner: 120
+        },
+    ]
+    function renderExam () {
+        let listItem = '';
+        list_test.map(function(list) {
+            listItem += `
+            <a href="${list.link}" class="exam__items">
+                <img src="/danhsachdadangky/imgs/${list.srcImg}" alt="" class="exam__img">
+                <div class="exam__body">
+                    <h4 class="section__title exam__name">${list.name}</h4>
+                    <div class="rank">
+                        <p class="rank-1 rank">1st: <span class="score score-1">${list.score1}</span>đ</p>
+                        <p class="rank-2 rank">2nd: <span class="score score-2">${list.score2}</span>đ</p>
+                    </div>
+                </div>
+                <div class="exam__part">
+                    <p class="par__recent"><span class="user__num">${list.joiner} </span>người tham gia</p>
+                </div>
+            </a>
+            `;
+        })
+        document.querySelector(`.show-bc-2`).innerHTML = listItem;
+    }
+
+    // Danh sach con trong
+function courseEmpty() {
+    const emptyData = `
+    <div class="courses__empty">
+        <h2 class="section__title empty__content">Bạn chưa đăng ký khóa học nào</h2>
+        <img src="/danhsachdadangky/imgs/cartEmpty.jpg" alt="" class="empty__img">
+    </div>`;
+    document.querySelector('.show-bc-1').innerHTML = emptyData;
+}
+
+// show page
+    function showPage1() {
+        document.querySelector(`.show-bc-2`).innerHTML = '';
+        if(courses.length !== 0) {
+            renderCourse();
+        } else {
+            courseEmpty();
+        }
+    }
+// xu ly nhung thao tac danh sach bai tap list exam
+    function showPage2() {
+        document.querySelector(`.show-bc-1`).innerHTML = '';
+        renderExam();
+    }
+// Kiem tra nut active
+    function checkSelection() {
+        const bcActive = localStorage.getItem('bcActive');
+        if(bcActive == "bc-1") {
+            bc1.classList.add('bc--active');
+            bc2.classList.remove('bc--active');
+            showPage1();
+        } else if(bcActive == "bc-2") {
+            bc2.classList.add('bc--active');
+            bc1.classList.remove('bc--active');
+            showPage2();
+        }
+        let user = JSON.parse(localStorage.getItem('dangnhap'));
+
+        document.querySelector('.user__name').textContent = user.name;
+        document.querySelector('.user__description').textContent = `Student ${user.course}`;
+    }
+// event click bc button
+    bcButton.forEach(function(bcItem) {
+        bcItem.addEventListener('click', function() {
+            let bcClick = this;
+            if(bcClick.id == "bc-1") {
+                bc1.classList.add('bc--active');
+                bc2.classList.remove('bc--active');
+                bcActivePage = "bc-1";
+                showPage1();
+            } else if(bcClick.id == "bc-2") {
+                showPage2();
+                bc2.classList.add('bc--active');
+                bc1.classList.remove('bc--active');
+                bcActivePage = "bc-2";
+            }
+        })
+    })
+
+// remove courses
+function removeCourse(index) {
+    courses.splice(index, 1);
+    localStorage.setItem('courses', JSON.stringify(courses));
+    checkSelection();
+}
+
+</script>
+</html>

@@ -1,0 +1,382 @@
+/* Nguoi thuc hien: Trần Thị Thúy Hiền */
+/*---Import font---*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Luu tru nhung bien dung chung
+de dung cac bien nay bang cach  => var(<tenbien>)*/
+
+:root {
+    --primary-color: #0d47a1;  /*mau chu de cua web*/
+    --text-color: #333;         /*mau chu binh thuong*/
+    --background-color: rgba(0, 0, 0, 0.011);       /*background khac mau trang*/
+    --height-navbar: 50px;          /*chieu cao thanh navbar*/
+    --background-footer: #faf7f7;       /*mau footer*/
+    --primary-width: 1400px;            /*chieu dai chung cua trang web*/
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    font-family: "Roboto Condensed", sans-serif;
+    scroll-behavior: smooth;
+}
+
+/*Thanh phan trong cua web => them vao class de su dung*/
+.container {
+    max-width: 95vw;
+    margin: auto;
+}
+
+.col-75.invalid .form-control {
+    box-shadow: 0px 0px 3px red;
+}
+
+.col-75.invalid .form-message {
+    color: red;
+}
+
+.page {
+    font-size: 1.6rem;
+    min-height: 100vh;
+    position: relative;
+    display: grid;
+    grid-template-areas: 'header' 'main' 'footer';
+    grid-template-rows: 67.5px auto auto;
+    justify-content: center;
+    gap: 10px;
+}
+
+.page-main__one-column {
+    margin-left: 20px;
+    margin-right: 20px;
+    grid-template-columns: 1fr;   
+    justify-content: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.section__content {
+    font-size: 1.6rem;
+    color: var(--text-color);
+    text-align: justify;
+}
+
+.section__title {
+    color: var(--primary-color);
+    margin: 12px 0px;
+}
+
+.section__title--secondary {
+    font-size: 2.4rem;
+}
+
+.active {
+    color: var(--primary-color);
+}
+
+/* Hien thi nut da dang ky thanh cong */
+.registed {
+    background-color: #009245 !important;
+    box-shadow: 2px 4px 4px #009245 !important;
+}
+
+.btn {
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    padding: 8px 16px;
+    min-width: 120px;
+    border-radius: 5px;
+    font-size: 1.6rem;
+}
+
+.btn:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+/*----Animation-----*/
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes growSmall {
+    to {
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.08);
+        transform: translate(3px, -3px);
+    }
+}
+/* ----CSS header ---- */
+.page-header {
+    grid-area: header;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.578);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    z-index: 1000;
+}
+
+.header-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    width: 120px;
+}
+
+.navbar__list {
+    position: relative;
+    padding: 8px 24px;
+}
+
+.navbar__link {
+    padding: 8px 24px;
+    font-size: 2.2rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--text-color);
+    text-transform: uppercase;
+}
+
+.navbar--active {
+    color: var(--primary-color);
+    background-color: #ecf3ffab;
+    border-radius: 10px;
+    transition: all .15s linear;
+}
+
+.navbar__link:hover {
+    color: var(--primary-color);
+}
+
+.header__menu--mobile {
+    display: none;
+    font-size: 2.5rem;
+    padding: 8px;
+}
+
+.navbar__close {
+    padding: 12px 24px;
+    text-align: right;
+}
+
+.navbar__close-icon {
+    padding: 8px;
+}
+
+.page-main {
+    grid-area: main;
+    min-height: 100vh;
+}
+/* ----CSS Footer--- */
+.page-footer {
+    grid-area: footer;
+    background-color: var(--background-footer);
+}
+
+.footer-article {
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(400px, 1fr));
+    gap: 15px;
+    padding: 24px 12px;
+}
+
+.footer__items {
+    padding: 24px 12px;
+}
+
+.footer__logo {
+    width: 150px;
+}
+
+.social__list {
+    list-style: none;
+}
+
+.social__link {
+    display: block;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 8px 0px;
+}
+
+.social__link:hover {
+    text-decoration: underline;
+    color: #000;
+}
+
+/*----CSS Modal---*/
+body {
+    position: relative;
+}
+
+.hidden {
+    display: none;
+}
+
+.overlay {
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #cccccc59;
+}
+
+.modal {
+    display: block;
+    height: fit-content;
+    z-index: 1001;
+    position: fixed;
+    top: 20%;
+    right: 0;
+    left: 0;
+    background-color: white;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.08);
+    padding: 24px;
+    overflow: hidden;
+    animation: fadeIn 0.1s linear;
+}
+
+.modal .section__title {
+    font-size: 2rem;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.modal__body {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 32px;
+}
+
+.modal__items {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+}
+
+.modal__close {
+    position: absolute;
+    top: 0;
+    right: 4px;
+    font-size: 3rem;
+    color: var(--text-color);
+    padding: 4px 8px;
+    border: none;
+    background-color: white;
+}
+
+.modal__close:hover {
+    cursor: pointer;
+    color: #000;
+    transform: scale(1.05);
+}
+
+.left {
+    width: 48%;
+}
+
+.left:hover {
+    transform: scale(0.99);
+    box-shadow: 0px 0px 3px 1px #00924478;
+}
+
+.click__img {
+    max-height: 200px;
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.click__link {
+    position: relative;
+    display: block;
+    border: 2px solid white;
+    border-radius: 12px;
+}
+/* ---Phan accept thuoc Modal---- */
+.right {
+    width: 48%;
+}
+
+.right:hover {
+    transform: scale(0.99);
+    box-shadow: 0px 0px 3px 1px  #e0666671;
+}
+
+.modal__button {
+    position: absolute;
+    transform: translate(65%, 50%);
+    bottom: 0;
+    text-align: center;
+}
+
+.btn__submit {
+    text-align: center;
+    color: white;
+    background-color: #009245;
+}
+
+.btn__cancel {
+    text-align: center;
+    color: white;
+    background-color: #e06666;
+}
+
+/*---CSS Alert---*/
+.alert {
+    position: fixed;
+    top: 10%;
+    right: 2%;
+    width: 400px;
+    padding: 8px 32px;
+    background-color: white;
+    font-size: 1.6rem;
+    font-weight: 200;
+    border: 2px solid white;
+    border-radius: 5px;
+    animation: fadeIn .2s ease-in, fadeOut linear 1s 3s forwards;
+}
+
+.alert__success {
+    background-color: #e7f7eecd;
+    color: #15673b;
+    border-color: #15673b;
+}
+
+.alert__fail {
+    background-color: #e7f7eecd;
+    color: rgb(212, 7, 7);
+    border-color: rgb(212, 7, 7);
+}

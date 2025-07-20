@@ -1,0 +1,296 @@
+<!-- Người thực hiện: Trần Minh Thư -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/4S_favicon_removed.png">
+    <link rel="stylesheet" href="/csschung/base.css">
+    <link rel="stylesheet" href="/chitietkhoahoc/hoahoc/hoahoc.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="/csschung/responsive.css">
+    <title>Hóa học</title>
+</head>
+<!-- Nguoi thuc hien: Tran Minh Thu -->
+<body onload="checkCourses()" class="page">
+    <header class="page-header">
+        <nav class="container header-navbar">
+            <a href="/trangchu/trangchu.html" class="header__logo-link">
+                <img src="/4Study_Logo_remove.png" alt="" class="header__logo">
+            </a>
+            <div class="navbar__list">
+                <a href="/trangchu/trangchu.html" class="navbar__link">Trang chủ</a>
+                <a href="#" class="navbar__link navbar--active">Khóa học</a>
+                <a href="/danhsachdadangky/dadangky.html" class="navbar__link">Học tập</a>
+                <a href="/dangnhap/dangnhap.html" class="navbar__link">Đăng nhập</a>
+            </div>
+            <div class="header__menu--mobile">
+                <i class="fa-solid fa-bars menu--icon"></i>
+                <div class="navbar__list--mobile hidden">
+                    <div class="navbar__close">
+                        <i class="fas fa-times navbar__close-icon"></i>
+                    </div>
+
+                    <a href="/trangchu/trangchu.html" class="navbar__link">Trang chủ</a>
+                    <a href="#" class="navbar__link">Khóa học</a>
+                    <a href="/danhsachdadangky/dadangky.html" class="navbar__link">Học tập</a>
+                    <a href="/dangnhap/dangnhap.html" class="navbar__link">Đăng nhập</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="page-main">
+        <div class="top_chemistry">
+            <div class="main_chemistry">
+                <div class="content">
+                    <h1>HÓA HỌC</h1>
+                    <p>Khóa học trực tuyến môn Hóa học cung cấp kiến thức cơ bản đến nâng cao về cấu tạo chất,
+                        phản ứng hóa học, bảng tuần hoàn, hóa học vô cơ và hữu cơ. Học viên sẽ được học qua 
+                        video bài giảng, bài tập tương tác, kiểm tra định kỳ và có thể học mọi lúc, mọi nơi. </p>
+                    <button type="submit" class="btn btn-dky" name="hoahoc" id="4">
+                        <a href="#">Đăng Ký</a>
+                    </button>
+                    <p>Tác giả  <a href="/trangchu/trangchu.html"> 4Study</a></p>
+                    <div id="lienquan">
+                        <p><i class="fa fa-graduation-cap" aria-hidden="true"></i> Có thể bạn quan tâm: 
+                            <a href="/chitietkhoahoc/tienganh/tienganh.html">Tiếng Anh 12</a>
+                            <a href="/chitietkhoahoc/vatly/vatly.html">Vật Lý 12</a>
+                            <a href="/chitietkhoahoc/toan/toan.html">Toán Học 12</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="photo">
+                    <img src="/chitietkhoahoc/hoahoc/chemistry6.jpg" alt=" ">
+                </div>
+            </div>
+            <!-- <div class="aside_chemistry">
+                <div class="aside_content">
+                    <div class="sales">- 31%</div>
+                    <h2>499.000đ</h2>
+                    <h4>720.000đ</h4>
+                    <hr>
+                    <h3>THÔNG TIN KHÓA HỌC</h3>
+                    <p><i class="fa-solid fa-clock"></i> 16 giờ học</p>
+                    <p><i class="fa fa-book" aria-hidden="true"></i> 43 bài học</p>
+                    <p><i class="fa-solid fa-file-text" aria-hidden="true"></i> 13 bài kiểm tra</p>
+                    <p><i class="fa fa-pencil" aria-hidden="true"></i> Truy cập trong 180 ngày</p>
+                </div>
+            </div> -->
+        </div>
+
+        <div>
+            <div class="main_gioithieu">
+                <div class="gioithieu">
+                    <div class="gioithieu_content">
+                        <h3>Khóa học Hóa học có gì?</h3>
+                        <p>Khóa học Hóa học trực tuyến được xây dựng nhằm giúp học sinh nắm vững toàn bộ 
+                            kiến thức cốt lõi và nâng cao, theo sát chương trình chuẩn của Bộ Giáo dục. Khóa học 
+                            không chỉ tập trung vào truyền đạt lý thuyết mà còn rèn luyện tư duy khoa học, kỹ năng 
+                            giải bài tập và khả năng ứng dụng vào thực tế. Khóa học được giảng dạy bởi đội ngũ 
+                            giáo viên chuyên môn cao, có kinh nghiệm luyện thi THPT quốc gia, với phương pháp học 
+                            tập sinh động, trực quan, dễ hiểu.</p> 
+                    </div>
+                    <div class="gioithieu_photo">
+                        <img src="/chitietkhoahoc/hoahoc/chemistry3.jpg" alt=" "> 
+                    </div>
+                </div>
+                <div class="gioithieu" id="gioithieu2">
+                    <div class="gioithieu_photo">
+                        <img src="/chitietkhoahoc/hoahoc/chemistry1.jpg" alt=" ">
+                    </div>
+                    <div class="gioithieu_content">
+                        <h3>Điểm nổi bật của khóa học</h3>
+                        <ul>
+                            <li><strong>Nội dung chuẩn hóa</strong>: Gồm toàn bộ chuyên đề từ cơ bản đến nâng cao, bám sát chương trình phổ thông.</li>
+                            <li><strong>Học trực tuyến linh hoạt</strong>: Có thể học mọi lúc, mọi nơi qua máy tính, điện thoại hoặc máy tính bảng.</li>
+                            <li><strong>Bài tập thực hành và đề kiểm tra online</strong>: Giúp củng cố kiến thức và làm quen với định dạng đề thi thật.</li>
+                            <li><strong>Giáo viên hỗ trợ 24/7</strong>: Tư vấn, giải đáp thắc mắc qua hệ thống hỏi đáp trực tuyến.</li>
+                            <li><strong>Thống kê tiến độ học tập cá nhân</strong>: Theo dõi sự tiến bộ từng chuyên đề.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="gioithieu" >
+                    <div class="gioithieu_content">
+                        <h3>Các yêu cầu của khóa học</h3>
+                        <ul>
+                            <li>Học sinh có thiết bị kết nối Internet (máy tính, laptop hoặc điện thoại).</li>
+                            <li>Đăng ký tài khoản học trực tuyến trên hệ thống.</li>
+                            <li>Tinh thần tự học, chủ động luyện tập và xem lại bài giảng thường xuyên.</li>
+                            <li>Nên có kiến thức nền tảng cơ bản của môn Hóa học ở lớp dưới (nếu học nâng cao).</li>
+                        </ul>
+                    </div>
+                    <div class="gioithieu_photo">
+                        <img src="/chitietkhoahoc/hoahoc/chemistry4.jpg" alt=" ">
+                    </div>
+                </div>
+                <div class="gioithieu" id="gioithieu4">
+                    <div class="gioithieu_photo">
+                        <img src="/chitietkhoahoc/hoahoc/chemistry5.jpg" alt=" ">
+                    </div>
+                    <div class="gioithieu_content">
+                        <h3>Kết quả học tập mong đợi</h3>
+                        <ul>
+                            <li>Hiểu rõ bản chất các khái niệm, định luật và phản ứng Hóa học.</li>
+                            <li>Giải được các dạng bài tập từ cơ bản đến nâng cao trong chương trình phổ thông.</li>
+                            <li>Thành thạo kỹ năng phân tích đề và xử lý bài thi trắc nghiệm hiệu quả.</li>
+                            <li>Sẵn sàng cho các kỳ thi học kỳ, thi học sinh giỏi hoặc kỳ thi THPT quốc gia.</li>
+                            <li>Hình thành tư duy logic, khoa học và phương pháp học tập hiệu quả.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="container lotrinh">
+                    <h3>Lộ Trình Học Tập</h3>
+                    <details class="lotrinh_content">
+                        <summary><i class="fa fa-book" aria-hidden="true"></i> Giai Đoạn 1: Este - Lipit - Cacbohidrat <i>(Tuần 1-2)</i></summary>
+                        <ul>
+                            <li>Este: khái niệm, cấu tạo, phản ứng đặc trưng</li>
+                            <hr>
+                            <li>Lipit: chất béo, xà phòng hóa</li>
+                            <hr>
+                            <li>Cacbohiđrat: glucozơ, saccarozơ, tinh bột, xenlulozơ</li>
+                            <hr>
+                            <p><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>Kỹ năng đạt được: 
+                                Viết phương trình phản ứng, phân biệt chất hữu cơ bằng phản ứng đặc trưng.</p>
+                        </ul> 
+                    </details>
+
+                    <details class="lotrinh_content">
+                        <summary><i class="fa fa-book" aria-hidden="true"></i> Giai đoạn 2: Amin – Amino axit – Protein – Polime <i>(Tuần 3-4)</i></summary>
+                        <ul>
+                            <li>Amin & phản ứng thế</li>
+                            <hr>
+                            <li>Amino axit & phản ứng lưỡng tính</li>
+                            <hr>
+                            <li>Protein: cấu trúc & tính chất</li>
+                            <hr>
+                            <li>Polime & vật liệu polime</li>
+                            <hr>
+                            <p><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>Kỹ năng đạt được: 
+                                Nhận dạng nhóm chức, hiểu vai trò của protein và vật liệu polymer trong đời sống.</p>
+                        </ul> 
+                    </details>
+
+                    <details class="lotrinh_content">
+                        <summary><i class="fa fa-book" aria-hidden="true"></i> Giai đoạn 3: Kim loại – Dãy điện hóa – Điện phân  <i>(Tuần 5-6)</i></summary>
+                        <ul>
+                            <li>Vị trí kim loại trong bảng tuần hoàn</li>
+                            <hr>
+                            <li>Dãy điện hóa kim loại</li>
+                            <hr>
+                            <li>Phản ứng thế, phản ứng với axit</li>
+                            <hr>
+                            <li>Điện phân, luyện kim</li>
+                            <hr>
+                            <p><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>Kỹ năng đạt được: 
+                                Dự đoán chiều phản ứng, giải bài toán điện phân, điều chế kim loại.</p>
+                        </ul> 
+                    </details>
+                    
+                    <details class="lotrinh_content">
+                        <summary><i class="fa fa-book" aria-hidden="true"></i> Giai đoạn 4: Sắt, Nhôm & hợp chất của chúng <i> (Tuần 7–8)</i></summary>
+                        <ul>
+                            <li>Oxi hóa – khử trong hóa vô cơ</li>
+                            <hr>
+                            <li>Các hợp chất của Fe: FeO, Fe₂O₃, Fe(OH)₃,...</li>
+                            <hr>
+                            <li>Nhôm và hợp chất của Al</li>
+                            <hr>
+                            <li>Bài toán tổng hợp kim loại chuyển tiếp</li>
+                            <hr>
+                            <p><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>Kỹ năng đạt được: 
+                                Giải các bài tập chuỗi phản ứng, hỗn hợp nhiều chất.</p>
+                        </ul> 
+                    </details>
+
+                    <details class="lotrinh_content">
+                        <summary><i class="fa fa-book" aria-hidden="true"></i> Giai đoạn 5: Hóa học & thực tiễn – Ôn thi THPT <i>(Tuần 9–10)</i></summary>
+                        <ul>
+                            <li>Ôn tập Hữu cơ & Vô cơ</li>
+                            <hr>
+                            <li>Phân tích đề minh họa</li>
+                            <hr>
+                            <li>Luyện đề trắc nghiệm THPT</li>
+                            <hr>
+                            <li>Kỹ thuật tránh bẫy, mẹo làm nhanh</li>
+                            <hr>
+                            <p><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>Kỹ năng đạt được: 
+                                Thành thạo giải đề chuẩn theo cấu trúc đề thi tốt nghiệp THPT.</p>
+                        </ul> 
+                    </details>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <article class="container footer-article">
+            <div class="footer__items">
+                <img src="/4Study_Logo_remove.png" alt="" class="footer__logo">
+                <p class="section__content">
+                    Trang web 4Study là một trong những nền tảng ưu việt hỗ
+                    trợ học tập tốt cho các bạn học sinh. Với sự chú tâm về lượng kiến thức,
+                    đảm bảo sự hiểu biết, chúng tôi mong muốn mang đến cho các bạn những trải nghiệm
+                    tốt nhất và đạt hiệu quả cao nhất trong học tập.
+                </p>
+            </div>
+
+            <div class="footer__items">
+                <h2 class="section__title section__title--secondary">Trang thông tin liên hệ</h2>
+                <ul class="social__list">
+                    <li class="social__items">
+                        <a href="" class="social__link">
+                            <i class="fa-brands fa-square-facebook social__logo" ></i>
+                            4Study Courses
+                        </a>
+                    </li>
+                    <li class="social__items">
+                        <a href="" class="social__link">
+                            <i class="fa-solid fa-envelope social__logo" ></i>
+                            4StudySupport@gmail.com
+                        </a>
+                    </li>
+                    <li class="social__items"> 
+                        <a href="" class="social__link">
+                            <i class="fa-brands fa-square-google-plus social__logo"></i>
+                            4Study.com
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__items">
+                <h2 class="section__title section__title--secondary">Chăm sóc khách hàng</h2>
+                <ul class="social__list">
+                    <li class="social__items">
+                        <a href="" class="social__link">
+                            Chính sách bảo hành
+                        </a>
+                    </li>
+                    <li class="social__items">
+                        <a href="" class="social__link">
+                            Điều khoản giao dịch chung
+                        </a>
+                    </li>
+                    <li class="social__items"> 
+                        <a href="" class="social__link">
+                            Liên hệ trao đổi & hợp tác
+                        </a>
+                    </li>
+                    <li class="social__items"> 
+                        <a href="" class="social__link">
+                            Hỗ trợ và trợ giúp
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </article>
+    </footer>
+    <div id="modal"></div>
+    <div id="alert"></div>
+</body>
+<script src="/csschung/main.js"></script>
+<script src="/danhsachdadangky/script.js"></script>
+</html>

@@ -1,0 +1,117 @@
+/* Người thực hiện: Trần Thị Thúy Hiền */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+/* < Tablet  Header & footer*/
+@media (max-width: 1023px) {
+    .header__menu--mobile {
+        display: block;
+    }
+
+    .header__menu--mobile:hover {
+        cursor: pointer;
+        color: var(--primary-color);
+    }
+
+    .navbar__list {
+        display: none;
+    }
+
+    .navbar__list--mobile {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 200px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.08);
+        animation: fadeIn .1s ease-in-out forwards;
+        z-index: 1000;
+    }
+
+    .navbar__link {
+        display: block;
+        padding: 16px 24px;
+        border-bottom: 1px solid #cccccc78;
+    }
+    
+    /* ----page da dang ky----*/
+    .page-main {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 'main-article main-article';
+    }
+
+    .show-bc-1 {
+        grid-template-columns: repeat(2, 355px);
+    }
+
+    .aside__user {
+        display: none;
+    }
+    
+    .footer-article {
+        display: block;
+    }
+
+}
+
+/* Mobile */
+
+@media (max-width: 739px) {
+    .page-main{
+        grid-template-areas: 'main-article';
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+
+    /* Dieu chinh chung */
+
+    .btn {
+        flex: 1;
+        padding: 10px 24px;
+    }
+
+    .btn-dky {
+        width: 100%;
+    }
+
+    .registed {
+        width: 100%;
+    }
+
+    .show-bc-1 {
+        grid-template-columns: 1fr;
+    }
+    
+    .modal .section__title {
+        font-size: 1.7rem;
+    }
+
+    .modal__button {
+        transform: translate(35%, 50%);
+    }
+
+    /* Responsive cho danh sach da dang ky */
+    .course__items {
+        min-width: 450px;
+    }
+
+    .empty__img {
+        width: 100%;
+    }
+
+    .aside__user {
+        display: none;
+    }
+
+    .btn__check {
+        margin-right: 10px;
+    }
+
+
+}

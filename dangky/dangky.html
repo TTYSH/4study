@@ -1,0 +1,227 @@
+<!-- Người thực hiện : Trần Ngọc Hân -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/4S_favicon_removed.png">
+    <link rel="stylesheet" href="/csschung/base.css">
+    <link rel="stylesheet" href="/dangky/dangky.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Đăng ký</title>
+</head>
+<body>
+    <!-- <header class="page-header">
+        <nav class="container header-navbar">
+            <a href="/trangchu/trangchu.html" class="header__logo-link">
+                <img src="/4Study_Logo_remove.png" alt="" class="header__logo">
+            </a>
+            <div class="navbar__list">
+                <a href="#" class="navbar__link navbar--active">Trang chủ</a>
+                <a href="#main__content" class="navbar__link">Khóa học</a>
+                <a href="/danhsachdadangky/dadangky.html" class="navbar__link">Học tập</a>
+                <a href="/dangnhap/dangnhap.html" class="navbar__link">Đăng nhập</a>
+            </div>
+            <div class="header__menu--mobile">
+                <i class="fa-solid fa-bars menu--icon"></i>
+                <div class="navbar__list--mobile hidden">
+                    <div class="navbar__close">
+                        <i class="fas fa-times navbar__close-icon"></i>
+                    </div>
+                    <a href="#" class="navbar__link">Trang chủ</a>
+                    <a href="#main__content" class="navbar__link">Khóa học</a>
+                    <a href="/danhsachdadangky/dadangky.html" class="navbar__link">Học tập</a>
+                    <a href="/dangnhap/dangnhap.html" class="navbar__link">Đăng nhập</a>
+                </div>
+            </div>
+        </nav>
+    </header> -->
+
+    <main class="container">
+        <div class="form-container"> 
+            <form action="#" method="post" id="form-1">
+                <div class="row">
+                    <h2>ĐĂNG KÝ</h2>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="name">HỌ TÊN</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" name="name" id="name" placeholder="Nhập họ tên" class="form-control">
+                        <p class="form-message"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="bday">NGÀY SINH</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="date" name="birthday" id="bday" class="form-control">
+                        <p class="form-message"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="email">EMAIL</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="email" name="email" placeholder="Nhập email" id="email" class="form-control">
+                        <p class="form-message"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="course">LỚP HỌC</label>
+                    </div>
+                    <div class="col-75">
+                        <select name="course" id="course">
+                            <option value="">Chọn khóa học</option>
+                            <option value="10">Lớp 10</option>
+                            <option value="11">Lớp 11</option>
+                            <option value="12">Lớp 12</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="password">MẬT KHẨU</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="password" name="password" id="password" placeholder="Nhập mật khẩu" class="form-control">
+                        <p class="form-message"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="conf_password">XÁC NHẬN MẬT KHẨU</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="password" name="conf_password" id="conf_password" placeholder="Nhập lại mật khẩu" class="form-control">
+                        <p class="form-message"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-75">
+                        <input type="checkbox" name="rmb-passwd" id="rmb-passwd">
+                        <label for="rmb-passwd"> 
+                            Nhớ mật khẩu</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-75">
+                        <input type="checkbox" name="agreement" id="agreement">
+                        <label for="agreement"> 
+                            Tôi đồng ý với tất cả các
+                            <a href="#"> Điều kiện và điều khoản</a>
+                        </label>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <p>Bạn đã có tài khoản?<a href="/dangnhap/dangnhap.html"> Đăng nhập</a></p>
+                    <input type="submit" class="btn button-dky" value="ĐĂNG KÝ">
+                </div>
+            </form>
+        </div>
+        
+    </main>
+
+    <!-- <footer class="page-footer">
+        <article class="container footer-article">
+            <div class="footer__items">
+                <img src="/4Study_Logo_remove.png" alt="" class="footer__logo">
+                <p class="section__content">
+                    Trang web 4Study là một trong những nền tảng ưu việt hỗ
+                    trợ học tập tốt cho các bạn học sinh. Với sự chú tâm về lượng kiến thức,
+                    đảm bảo sự hiểu biết, chúng tôi mong muốn mang đến cho các bạn những trải nghiệm
+                    tốt nhất và đạt hiệu quả cao nhất trong học tập.
+                </p>
+            </div>
+
+            <div class="footer__items">
+                <h2 class="section__title section__title--secondary">Trang thông tin liên hệ</h2>
+                <ul class="social__list">
+                    <li class="social__items">
+                        <a href="" class="social__link">
+                            <i class="fa-brands fa-square-facebook social__logo" ></i>
+                            4Study Courses
+                        </a>
+                    </li>
+                    <li class="social__items">
+                        <a href="" class="social__link">
+                            <i class="fa-solid fa-envelope social__logo" ></i>
+                            4StudySupport@gmail.com
+                        </a>
+                    </li>
+                    <li class="social__items"> 
+                        <a href="" class="social__link">
+                            <i class="fa-brands fa-square-google-plus social__logo"></i>
+                            4Study.com
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__items">
+                <h2 class="section__title section__title--secondary">Chăm sóc khách hàng</h2>
+                <ul class="social__list">
+                    <li class="social__items">
+                        <a href="" class="social__link">
+                            Chính sách bảo hành
+                        </a>
+                    </li>
+                    <li class="social__items">
+                        <a href="" class="social__link">
+                            Điều khoản giao dịch chung
+                        </a>
+                    </li>
+                    <li class="social__items"> 
+                        <a href="" class="social__link">
+                            Liên hệ trao đổi & hợp tác
+                        </a>
+                    </li>
+                    <li class="social__items"> 
+                        <a href="" class="social__link">
+                            Hỗ trợ và trợ giúp
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </article>
+    </footer> -->
+</body>
+<!-- <script src="/csschung/main.js"></script> -->
+<script src="/dangky/validator.js"></script>
+<script>
+    // Truyền vào hàm Valadator 1 object liên quan đến form cần xử lý lỗi
+    Validator({
+        form: '#form-1',
+        errorMessage: '.form-message',
+        rules: [
+            Validator.isRequired('#name'),
+            Validator.isRequired('#bday'),
+            Validator.isEmail('#email'),
+            Validator.minLength('#password', 6),
+            Validator.isConfirm('#conf_password', function() {
+                return document.querySelector('#form-1 #password').value
+            }, 'Mật khẩu nhập không chính xác')
+        ],
+        onSubmit: function (data) {
+            let users = JSON.parse(localStorage.getItem('users')) || [];
+            
+            let find = false;
+            users.forEach(user => {
+                if(data.email === user.email) {
+                    alert("Email đã được đăng ký !!!");
+                    find  = true;
+                }
+            })
+            if(!find) {
+                users.push(data);
+                localStorage.setItem('users', JSON.stringify(users));
+            }
+        }
+    })
+</script>
+</html>

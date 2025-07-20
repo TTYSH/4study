@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/4S_favicon_removed.png">
+    <link rel="stylesheet" href="/csschung/base.css">
+    <link rel="stylesheet" href="./trangchu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="/toan/toan.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>Vật lý | 4Study</title>
+    <style>
+        .benefit-card {
+            border-left: 4px solid #0d6efd;
+            transition: all 0.3s ease;
+        }
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .benefit-icon {
+            color: #0d6efd;
+            font-size: 3rem;
+        }
+
+        .card {
+            border-radius: 1rem;
+        }
+
+        .card-body {
+            padding: 3rem 2rem;
+        }
+
+        .g-4 {
+            --bs-gutter-y: 2rem;
+            --bs-gutter-x: 2rem;
+        }
+
+        .container{
+            position: static;
+            height: auto;
+            padding-right: var(--bs-gutter-x, 1.75rem);
+            padding-left: var(--bs-gutter-x, 1.75rem);
+
+        }
+        .display-3 {
+            font-size: calc(3rem + 3.3vw);
+        }
+        .fs-4 {
+            font-size:calc(2rem + .3vw) !important;
+        }
+        .g-5{
+            --bs-gutter-x: 6rem;
+        }
+        .mtb-16{
+            margin: 16px 0;
+        }
+
+        .row>* {
+            padding-right: calc(var(--bs-gutter-x) * 0.7);
+    padding-left: calc(var(--bs-gutter-x) * 0.7);
+        }
+
+        @media(min-width: 768px) {
+            .notion-img-3d-md-lg {
+                box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+                transform: perspective(1200px) rotateY(-15deg) rotateX(5deg) scale(1.05);
+            }
+
+            .notion-img-3d-md-lg:hover {
+                transform: perspective(1200px) rotateY(-12deg) rotateX(3deg) scale(1.08);
+                box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            }
+
+            .notion-img {
+                height: 400px;
+                overflow: visible;
+                box-shadow: none;        
+            }
+
+        }
+
+        .notion-img-3d-md-lg {
+            height: 100%;
+            width: 100%;
+            border: 2px solid #57534E;
+            border-radius: 5px;
+            object-fit: contain;
+            object-position: center;
+            transition: transform 0.5s ease, box-shadow 0.3s ease;
+        }
+
+        .pb-48{
+            padding-bottom: 48px !important;
+        }
+
+        .header-section {
+          background: linear-gradient(135deg, #2c3e50, #34495e);
+          color: white;
+          padding: 1.5rem;
+          border-bottom: 3px solid #3498db;
+          border-radius: 16px 16px 0 0;
+       }
+
+       .phase-subtitle{
+        margin-top: 8px;
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 16px;
+       }
+
+       .phase-title {
+        font-size: 32px;
+        font-weight: 700;
+        
+       }
+
+       .card-header {
+        padding: 0.6rem 1.5rem;
+        background-color: rgba(33,37,41, 0.03);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.175);
+       }
+
+       .nav-tabs {
+        border-bottom: none;
+        margin: 0;
+       }    
+
+       .nav-tabs .nav-link.active {
+        color: #3498db;
+        background:rgba(52, 152, 219, 0.1) ;
+        border-bottom: 3px solid;
+       }
+
+       .nav-tabs .nav-link {
+        border: none;
+        padding: 1.5rem 2rem;
+        font-weight: 600;
+        color: #6c757d;
+        background: transparent;
+        border-bottom: 3px solid transparent;
+        transition: all 0.3s ease;
+        margin-bottom: 1px;
+        border: 1px solid transparent;
+        border-top-left-radius: .5rem;
+        border-top-right-radius: .5rem;
+
+       }
+
+       .nav-tabs .nav-link:hover {
+            color: #3498db;
+            background: rgba(52, 152, 219, 0.1);
+            border-bottom: 3px solid;
+       }
+
+       .nav-link {
+        display: block;
+        padding: 0.5rem 1rem;
+        
+        color: #0d6efd;
+        text-decoration: none;
+        background: 0 0;
+        border: 0;
+        transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;   
+       }
+
+       .accordion-button:not(.collapsed) {
+        background: #e3f2fd;
+        color: #1976d2;
+        box-shadow: none;
+       }
+
+       .accordion-button {
+        font-size: 16px;
+        font-weight: 600;
+        padding: 2rem 2.4rem;
+       }
+
+       
+       
+       .accordion-item:not(:first-of-type) {
+        border-top: 1px solid rgba(0, 0, 0, .125) ;
+        }
+        
+        .accordion-item{
+            border-top: 1px solid rgba(0, 0, 0, .125) ;
+            border-right: none;
+            border-left: none;
+            border-bottom: none;
+        }
+
+        .accordion{
+            border-bottom: 1px solid rgba(0, 0, 0, .125);
+        }
+
+        .accordion-body p {
+            color: #555;
+            line-height: 1.4;
+            white-space: pre-line;
+        }
+        
+        .timeline {
+      position: relative;
+      padding: 2rem 0;
+    }
+    /* Đường timeline dọc giữa */
+    .timeline::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: #0d6efd;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 2px;
+    }
+    /* Mỗi mục timeline */
+    .timeline-item {
+      position: relative;
+      width: 50%;
+      padding: 1.5rem 2rem;
+      box-sizing: border-box;
+    }
+    /* Mục bên trái */
+    .timeline-item.left {
+      left: 0;
+      text-align: right;
+    }
+    /* Mục bên phải */
+    .timeline-item.right {
+      left: 50%;
+      text-align: left;
+    }
+    /* Vòng tròn đánh dấu */
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      top: 1.5rem;
+      width: 20px;
+      height: 20px;
+      background: #0d6efd;
+      border-radius: 50%;
+      border: 4px solid white;
+      box-shadow: 0 0 0 2px #0d6efd;
+      z-index: 1;
+    }
+    .timeline-item.left::before {
+      right: -12px;
+    }
+    .timeline-item.right::before {
+      left: -12px;
+    }
+    /* Nội dung card */
+    .timeline-content {
+      background: white;
+      padding: 1.5rem 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+      display: inline-block;
+      max-width: 90%;
+    }
+    .timeline-title {
+      color: #0d6efd;
+      font-weight: 700;
+      margin-bottom: 2rem;
+      font-size: 2.4rem;
+    }
+    .timeline-list {
+      list-style: none;
+      padding-left: 0;
+      font-size: 1.6rem;
+      color: #333;
+    }
+    .timeline-list li {
+      margin-bottom: 0.8rem;
+      position: relative;
+      padding-left: 2rem;
+    }
+    
+
+    /* Responsive: trên màn nhỏ thì timeline thành 1 cột */
+    @media (max-width: 739px) {
+      .timeline::before {
+        left: 8px;
+      }
+      .timeline-item {
+        width: 100% !important;
+        padding-left: 3rem !important;
+        padding-right: 1rem !important;
+        text-align: left !important;
+        left: 0 !important;
+        margin-bottom: 2rem;
+      }
+      .timeline-item::before {
+        left: 0 !important;
+        right: auto !important;
+      }
+      .timeline-content {
+        max-width: 100% !important;
+      }
+
+      .timeline-title {
+        font-size: 20px;
+      }
+
+      .timeline-list li {
+        font-size: 16px;
+      }
+      
+      .card-header .nav-item,
+      .card-header .nav-item button{
+        width: 100%;
+      }
+
+      .g-0 {
+        --bs-gutter-x: 0;
+      }
+    }
+      
+        
+        
+
+        
+    </style>
+    
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navbar__logo">
+                <li>
+                   <a href="trangchu.html" class="navbar__logo-link">
+                    <img src="/4Study_Logo_remove.png" alt="" class="navbar__logo-img">
+                    </a> 
+                </li>
+            </ul>
+            <ul class="navbar__list">
+                <li class="navbar__items">
+                    <a href="#trangchu" class="navbar__link active">TRANG CHỦ</a>
+                </li>
+                <li class="navbar__items">
+                    <a href="#" class="navbar__link">KHÓA HỌC</a>
+                </li>
+                <li class="navbar__items">
+                    <a href="/danhsachdadangky/dadangky.html" class="navbar__link">HỌC TẬP</a>
+                </li>
+                <li class="navbar__items">
+                    <a href="/dangky/dangky.html" class="navbar__link">ĐĂNG KÝ</a>
+                </li>
+                <li class="navbar__items">
+                    <a href="/dangnhap/dangnhap.html" class="navbar__link">ĐĂNG NHẬP</a>
+                </li>
+                <div class="line"></div>
+            </ul>
+        </nav>
+    </header>
+        
+    <!-- Phần nội dung chính của trang -->
+    <main class="main">
+        <div class="course">
+            <!-- Phần giới thiệu các khóa học -->
+            <div class="course-intro">
+                <div class="course-banner">
+                    <div class="container_xl">
+                        <div class="content_xl">
+                            <div class="gioithieu-img">
+                                <div class="khung-img">
+                                    <img src="/vatly/image-vatly/OIUFOY0.jpg" alt="" class="course-img">
+                                </div>
+                            </div>
+
+                            <!-- Thông tin khóa học -->
+                            <div class="gioithieu">
+                                <div class="khung-khoahoc">
+                                    <h1 class="ten-khoahoc">Vật Lý Lớp 12 - Ôn Thi THPT Quốc Gia</h1>
+                                    <p class="gioithieu-khoahoc">Kế thừa trọn vẹn kiến thức nền tảng từ lớp 11, chương trình Vật Lý 12 sẽ mở ra cho bạn thế giới kỳ diệu của các hiện tượng vật lý hiện đại, gắn liền với ứng dụng thực tiễn. Các chuyên đề trọng tâm không thể bỏ qua, bao gồm Dao động cơ, Sóng cơ, Điện xoay chiều, và lượng tử ánh sáng. Bắt đầu ngay để chinh phục điểm 9, 10 môn Vật Lý!</p>
+                                </div>
+                                <div class="khoangcach-dangky">
+                                     <a href="" class="link_dangky"><button class="button_dangky button_khung">Đăng ký</button></a>
+
+
+                                </div>
+
+                                <div class="tacgia">
+                                    <span>Tác giả</span>
+                                    <a href="">4Study</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                
+            </div>
+
+            <div class="container py-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 mt-5 mb-5">
+                        <h3 class="text-center mb-48 fw-bold fsize-48 display-3">AI NÊN THAM GIA KHOÁ HỌC?</h3>
+                        <div class="row g-4">
+                            <div class=" col-md-6">
+                                <div class="benefit-card card h-100 p-4">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center mb-5">
+                                            <i class="me-3 fa-solid fa-user-plus benefit-icon"></i>
+                                            <p class="h2 mb-0 fw-bolder">Học sinh lớp 12 </p>
+
+                                        </div>
+                                        <p class="card-text">Cần hệ thống kiến thức toàn diện chuẩn bị cho kỳ thi THPT Quốc Gia</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" col-md-6">
+                                <div class="benefit-card card h-100 p-4">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center mb-5">
+                                            <i class="me-3 fa-solid fa-user-plus benefit-icon"></i>
+                                            <p class="h2 mb-0 fw-bolder">Học sinh mất gốc </p>
+
+                                        </div>    
+                                        <p class="card-text">Muốn lấy lại nền tảng kiến thức từ cơ bản đến nâng cao</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" col-md-6">
+                                <div class="benefit-card card h-100 p-4">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center mb-5">
+                                            <i class="me-3 fa-solid fa-user-plus benefit-icon"></i>
+                                            <p class="h2 mb-0 fw-bolder">Học sinh khá </p>
+
+                                        </div>
+                                        <p class="card-text">Muốn đạt điểm 9-10 và chinh phục các câu hỏi vận dụng cao</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" col-md-6">
+                                <div class="benefit-card card h-100 p-4">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center mb-5">
+                                            <i class="me-3 fa-solid fa-user-plus benefit-icon"></i>
+                                            <p class="h2 mb-0 fw-bolder">Thí sinh tự do</p> 
+
+                                        </div>
+                                        <p class="card-text">Ôn thi lại để cải thiện điểm số hoặc xét tuyển đại học</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <section class="py-5 bc-white pb-48">
+                <div class="container">
+                    <div class="row align-items-center justify-content-between mt-5 mb-5 g-5 g-0">
+                        <div class="col-md-6">
+                            <span class="text-secondary fw-semibold mb-3 d-block" style="font-size:1.3rem;">Có sẵn ở tất cả các gói học</span>
+                            <h1 class="fw-bold display-3 mb-5 fsize-48">Sổ tay Notion</h1>
+                            <div class="fs-4 mb-2">
+                                Tất cả các gói học đều được trang bị sổ tay Notion giúp bạn theo dõi và hoàn thành mọi hoạt động trong khóa học một cách thuận tiện.
+                            </div>
+                        </div>
+                        <div class="col-md-6 text-center notion-img">
+                            
+                            <img src="/toan/image-toan/en-US.avif" alt="Meeting Notes Notion"
+                                class="img-fluid  notion-img-3d-md-lg" >
+
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+            <div class="container my-5 ">
+                <div class="card shadow mb-4">
+                    <div class="header-section">
+                        <h1 class="phase-title">
+                            <i class="fas fa-graduation-cap"></i>
+                            Phần 1: Xây Dựng Nền Tảng
+                        </h1>
+                        <div class="phase-subtitle">
+                            <i class="fa-solid fa-check-to-slot me-2"></i>
+                           Kiến thức trọng tâm cần nắm vững
+                        </div>
+                    </div>
+                    <div class="card-header">
+                        <ul class="nav nav-tabs card-header-tabs" id="tab1Tabs" role="tablist">
+                            <li class="nav-item">
+                                <button class="nav-link active" id="tab1-1-tab" data-bs-toggle="tab" role="tab" data-bs-target="#tab1-1" type="button" aria-controls="tab1-1" aria-selected="true">Ôn tập kiến thức căn bản: 10-11</button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link" id="tab1-2-tab" data-bs-toggle="tab" role="tab" data-bs-target="#tab1-2" type="button" aria-controls="tab1-2" aria-selected="false">Dao động và Sóng (cơ + điện từ) </button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link" id="tab1-3-tab" data-bs-toggle="tab" role="tab" data-bs-target="#tab1-3" type="button" aria-controls="tab1-3" aria-selected="false">Điện và Quang học </button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link" id="tab1-4-tab" data-bs-toggle="tab" role="tab" data-bs-target="#tab1-4" type="button" aria-controls="tab1-4" aria-selected="false">Hạt nhân nguyên tử</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <div class="tab-content" id="tab1TabsContent">
+                            <div class="tab-pane fade show active" id="tab1-1" role="tabpanel" aria-labelledby="tab1-1-tab">
+                                <div class="accordion" id="accordion1a">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="heading1a1" >
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1a1" aria-expanded="false" aria-controls="collapse1a1">Nền tảng trước khi bắt đầu</button>
+                                        </h2>
+                                        <div id="collapse1a1" class="accordion-collapse collapse" aria-labelledby="heading1a1">
+                                            <div class="accordion-body">
+                                                <p style="white-space: pre-line">
+                                                    ◾ Cơ học
+                                                    ◾ Nhiệt học
+                                                    ◾ Từ học
+                                                    ◾ Quang học
+                                                    ◾ Điện học
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                     <div class="accordion-item">
+                                        <h2 class="accordion-header" id="heading1a2" >
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1a2" aria-expanded="false" aria-controls="collapse1a2">Phương pháp giảng dạy</button>
+                                        </h2>
+                                        <div id="collapse1a2" class="accordion-collapse collapse" aria-labelledby="heading1a2">
+                                            <div class="accordion-body">
+                                                <p style="white-space: pre-line">
+                                                    ◾ Kết hợp lý thuyết và ví dụ minh họa trực quan
+                                                    ◾ Áp dụng phương pháp "3 bước vàng" Hiều đề - Phân tích - Giải quyết
+                                                    ◾ Giải bài tập mẫu cùng giáo viên
+                                                    ◾ Case study từ đề thi thật các năm
+                                                    ◾ Sử dụng hình ảnh, đồ thị động để minh họa khái niệm
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="heading1a3" >
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1a3" aria-expanded="false" aria-controls="collapse1a3">Môi trường học tập</button>
+                                        </h2>
+                                        <div id="collapse1a3" class="accordion-collapse collapse" aria-labelledby="heading1a3">
+                                            <div class="accordion-body">
+                                                <p style="white-space: pre-line">
+                                                    ◾ Video bài giảng 4K chất lượng cao
+                                                    ◾ Bài giảng livestream tương tác trực tiếp
+                                                    ◾ Phòng học ảo mô phỏng lớp học thật
+                                                    
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="heading1a4" >
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1a4" aria-expanded="false" aria-controls="collapse1a4">Công cụ và Tài nguyên hỗ trợ</button>
+                                        </h2>
+                                        <div id="collapse1a4" class="accordion-collapse collapse" aria-labelledby="heading1a4">
+                                            <div class="accordion-body">
+                                                <p style="white-space: pre-line">
+                                                    ◾ Máy tính Casio online
+                                                    ◾ App chấm bài tự động
+                                                    ◾ Sổ tay công thức giải nhanh
+                                                    ◾ Bộ đề thi phân loại theo chuyên đề
+                                                    ◾ Ngân hàng 1000+ bài tập có đáp án
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="heading1a5" >
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1a5" aria-expanded="false" aria-controls="collapse1a5">Giá trị sau khi hoàn thành khóa học</button>
+                                        </h2>
+                                        <div id="collapse1a5" class="accordion-collapse collapse" aria-labelledby="heading1a5">
+                                            <div class="accordion-body">
+                                                <p style="white-space: pre-line">
+                                                    1. Nắm vững toàn bộ kiến thức Toán 12 trọng tâm
+                                                    2. Thành thạo kỹ năng giải đề thi Đại học
+                                                    3. Tăng tốc độ làm bài lên 200%
+                                                    4. Làm chủ các dạng bài vận dụng cao
+                                                    5. Phát triển tư duy toán học hệ thống
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="tab1-2" role="tabpanel" aria-labelledby="tab1-2-tab">
+                                <div class="accordion" id="accordion1b">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="heading1b1" >
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1b1" aria-expanded="false" aria-controls="collapse1b1">Dao động cơ học</button>
+                                        </h2>
+                                        <div id="collapse1b1" class="accordion-collapse collapse" aria-labelledby="heading1b1">
+                                            <div class="accordion-body">
+                                                <p style="white-space: pre-line">
+                                                    ◾ Dao động điều hòa
+                                                    ◾ Con lắc lò xo
+                                                    ◾ Con lắc đơn
+                                                    ◾ Tổng hợp dao động
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="heading1b2" >
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1b2" aria-expanded="false" aria-controls="collapse1b2">Sóng cơ học</button>
+                                        </h2>
+                                        <div id="collapse1b2" class="accordion-collapse collapse" aria-labelledby="heading1b2">
+                                            <div class="accordion-body">
+                                                <p style="white-space: pre-line">
+                                                    ◾ Sóng cơ và sự truyền sóng
+                                                    ◾ Giao thoa sóng
+                                                    ◾ Sóng dừng
+                                                    ◾ Sóng âm
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="heading1b3" >
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1b3" aria-expanded="false" aria-controls="collapse1b3">Dao động điện từ</button>
+                                        </h2>
+                                        <div id="collapse1b3" class="accordion-collapse collapse" aria-labelledby="heading1b3">
+                                            <div class="accordion-body">
+                                                <p style="white-space: pre-line">
+                                                    ◾ Dao động điện từ trong mạch LC
+                                                    ◾ Dao động điện từ tắt tần và duy trì
+                                                    ◾ Giao động điện từ cưỡng bức
+                                                    
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="heading1b4" >
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1b4" aria-expanded="false" aria-controls="collapse1b4">Sóng điện từ</button>
+                                        </h2>
+                                        <div id="collapse1b4" class="accordion-collapse collapse" aria-labelledby="heading1b4">
+                                            <div class="accordion-body">
+                                                <p style="white-space: pre-line">
+                                                    ◾ Sóng điện từ và tính chất
+                                                    ◾ Phổ sóng điện từ
+                                                    ◾ Nguyên tắc thông tin liên lạc
+                                                    
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                   
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="tab1-3" role="tabpanel" aria-labelledby="tab1-3-tab">
+                                <div class="accordion" id="accordion1c">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="heading1c1" >
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1c1" aria-expanded="false" aria-controls="collapse1c1">Điện học</button>
+                                        </h2>
+                                        <div id="collapse1c1" class="accordion-collapse collapse" aria-labelledby="heading1c1">
+                                            <div class="accordion-body">
+                                                <p style="white-space: pre-line">
+                                                    ◾ Dòng điện xoay chiều
+                                                    ◾ Mạch RLC nối tiếp
+                                                    ◾ Máy biến áp và Truyền tải điện
+                                                    
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="heading1c2" >
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1c2" aria-expanded="false" aria-controls="collapse1c2">Quang học</button>
+                                        </h2>
+                                        <div id="collapse1c2" class="accordion-collapse collapse" aria-labelledby="heading1c2">
+                                            <div class="accordion-body">
+                                                <p style="white-space: pre-line">
+                                                    ◾ Hiện tượng khúc xạ và phản xạ
+                                                    ◾ Lăng kính và Thấu kính
+                                                    ◾ Giao thoa ánh sáng
+                                                    ◾ Quang phổ và Tán sắc
+                                                    
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  
+                                    
+                                   
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="tab1-4" role="tabpanel" aria-labelledby="tab1-4-tab">
+                                <div class="accordion" id="accordion1d">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="heading1d1" >
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1d1" aria-expanded="false" aria-controls="collapse1d1">Cấu tạo của hạt nhân</button>
+                                        </h2>
+                                        <div id="collapse1d1" class="accordion-collapse collapse" aria-labelledby="heading1d1">
+                                            <div class="accordion-body">
+                                                <p style="white-space: pre-line">
+                                                    ◾ Thành phần cơ bản
+                                                    ◾ Đồng vị 
+                                                    ◾ Kí hiệu và Đặc trưng
+                                                    
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="heading1d2" >
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1d2" aria-expanded="false" aria-controls="collapse1d2">Năng lượng hạt nhân</button>
+                                        </h2>
+                                        <div id="collapse1d2" class="accordion-collapse collapse" aria-labelledby="heading1d2">
+                                            <div class="accordion-body">
+                                                <p style="white-space: pre-line">
+                                                    ◾ Độ hụt khối
+                                                    ◾ Năng lượng liên kết
+                                                    
+                                                    
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="heading1d3" >
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1d3" aria-expanded="false" aria-controls="collapse1d3">Hiện tượng phóng xạ</button>
+                                        </h2>
+                                        <div id="collapse1d3" class="accordion-collapse collapse" aria-labelledby="heading1d3">
+                                            <div class="accordion-body">
+                                                <p style="white-space: pre-line">
+                                                    ◾ Định luật phóng xạ
+                                                    ◾ Các dạng phóng xạ
+                                                    
+                                                    
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="heading1d4" >
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1d4" aria-expanded="false" aria-controls="collapse1d4">Phản ứng hạt nhân</button>
+                                        </h2>
+                                        <div id="collapse1d4" class="accordion-collapse collapse" aria-labelledby="heading1d4">
+                                            <div class="accordion-body">
+                                                <p style="white-space: pre-line">
+                                                    ◾ Phản ứng phân hạch
+                                                    ◾ Phản ứng nhiệt hạch
+                                                    
+                                                    
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  
+                                    
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card shadow">
+                    <div class="header-section">
+                        <h1 class="phase-title">
+                            <i class="fas fa-graduation-cap"></i>
+                            Phần 2: Ứng dụng và Luyện tập
+                        </h1>
+                        <div class="phase-subtitle">
+                            <i class="fa-solid fa-check-to-slot me-2"></i>
+                           Các nguyên tắc cốt lõi khi xây dựng nền tảng
+                        </div>
+                    </div>
+
+                    <div class="card-header">
+                        <ul class="nav nav-tabs card-header-tabs" id="tab2Tabs" role="tablist">
+                            <li class="nav-item">
+                                <button class="nav-link active" id="tab2-1-tab" data-bs-toggle="tab" data-bs-target="#tab2-1" type="button" role="tab" aria-controls="tab2-1" aria-selected="true">Thực hành bài tập và Kỹ thuật giải nhanh</button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link" id="tab2-2-tab" data-bs-toggle="tab" data-bs-target="#tab2-2" type="button" role="tab" aria-controls="tab2-2" aria-selected="false">Luyện đề nâng cao</button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link" id="tab2-3-tab" data-bs-toggle="tab" data-bs-target="#tab2-3" type="button" role="tab" aria-controls="tab2-3" aria-selected="false">Cấu trúc khóa học</button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link" id="tab2-4-tab" data-bs-toggle="tab" data-bs-target="#tab2-4" type="button" role="tab" aria-controls="tab2-4" aria-selected="false">Phương pháp đánh giá</button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="card-body">
+                        <div class="tab-content" id="tab2TabsContent">
+                            <div class="tab-pane fade show active" id="tab2-1" role="tabpanel" aria-labelledby="tab2-1-tab">
+                                <div class="accordion" id="accordion2a">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="heading2a1">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2a1" aria-expanded="false" aria-controls="collapse2a1">
+                                            Dao động điều hòa
+                                            </button>
+                                        </h2>
+                                        <div id="collapse2a1" class="accordion-collapse collapse" aria-labelledby="heading2a1">
+                                            <div class="accordion-body">
+                                                <p>
+                                                    ◾ Con lắc lò xo
+                                                    ◾ Con lắc đơn
+                                                    ◾ Tổng hợp dao động
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="heading2a2">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2a2" aria-expanded="false" aria-controls="collapse2a2">
+                                            Sóng cơ và Sóng âm
+                                            </button>
+                                        </h2>
+                                        <div id="collapse2a2" class="accordion-collapse collapse" aria-labelledby="heading2a2">
+                                            <div class="accordion-body">
+                                                <p>
+                                                    ◾ Đặc trưng của sóng cơ
+                                                    ◾ Giao thoa sóng
+                                                    ◾ Sóng dừng
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="heading2a3">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2a3" aria-expanded="false" aria-controls="collapse2a3">
+                                            Dòng điện xoay chiều
+                                            </button>
+                                        </h2>
+                                        <div id="collapse2a3" class="accordion-collapse collapse" aria-labelledby="heading2a3">
+                                            <div class="accordion-body">
+                                                <p>
+                                                    ◾ Mạch RLC
+                                                    ◾ Công suất dòng điện xoay chiều
+                                                    ◾ Máy biến áp
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="heading2a4">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2a4" aria-expanded="false" aria-controls="collapse2a4">
+                                            Dao động và Sóng điện từ
+                                            </button>
+                                        </h2>
+                                        <div id="collapse2a4" class="accordion-collapse collapse" aria-labelledby="heading2a4">
+                                            <div class="accordion-body">
+                                                <p>
+                                                    ◾ Mạch dao động LC
+                                                    ◾ Sóng điện từ
+                                                    ◾ Truyền thông bằng sóng điện từ
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="heading2a5">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2a5" aria-expanded="false" aria-controls="collapse2a5">
+                                            Sóng ánh sáng
+                                            </button>
+                                        </h2>
+                                        <div id="collapse2a5" class="accordion-collapse collapse" aria-labelledby="heading2a5">
+                                            <div class="accordion-body">
+                                                <p>
+                                                    ◾ Tán sắc ánh sáng
+                                                    ◾ Giao thoa ánh sáng
+                                                    ◾ Nhiễu xạ ánh sáng
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="heading2a6">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2a6" aria-expanded="false" aria-controls="collapse2a6">
+                                            Lượng tử ánh sáng
+                                            </button>
+                                        </h2>
+                                        <div id="collapse2a6" class="accordion-collapse collapse" aria-labelledby="heading2a6">
+                                            <div class="accordion-body">
+                                                <p>
+                                                    ◾ Hiện tượng quang điện
+                                                    ◾ Thuyết lượng tử ánh sáng
+                                                    ◾ Tia X
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="heading2a7">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2a7" aria-expanded="false" aria-controls="collapse2a7">
+                                            Hạt nhân nguyên tử
+                                            </button>
+                                        </h2>
+                                        <div id="collapse2a7" class="accordion-collapse collapse" aria-labelledby="heading2a7">
+                                            <div class="accordion-body">
+                                                <p>
+                                                    ◾ Cấu tạo hạt nhân
+                                                    ◾ Phản ứng hạt nhân
+                                                    ◾ năng lượng hạt nhân
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            
+                            <div class="tab-pane fade" id="tab2-2" role="tabpanel" aria-describedby="tab2-2-tab">
+                                <div class="accordion" id="accordion2b">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="heading2b1">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2b1" aria-expanded="false" aria-controls="collapse2b1">
+                                            Luyện đề theo dạng chuyên đề
+                                            </button>
+                                        </h2>
+                                        <div id="collapse2b1" class="accordion-collapse collapse" aria-labelledby="heading2b1">
+                                            <div class="accordion-body">
+                                                <p>
+                                                    ◾ Dạng 1: Dao động cơ học
+                                                    ◾ Dạng 2: Sóng cơ học
+                                                    ◾ Dạng 3: Điện xoay chiều
+                                                    ◾ Dạng 4: Dao động và Sóng điện từ
+                                                    ◾ Dạng 5: Quang học
+                                                    ◾ Dạng 6: Lượng tử ánh sáng
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="heading2b2">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2b2" aria-expanded="false" aria-controls="collapse2b2">
+                                            Sóng cơ và Sóng âm
+                                            </button>
+                                        </h2>
+                                        <div id="collapse2b2" class="accordion-collapse collapse" aria-labelledby="heading2b2">
+                                            <div class="accordion-body">
+                                                <p>
+                                                    ◾ 50 đề thi thử mới nhất 
+                                                    ◾ Đề thi các tỉnh thành
+                                                    ◾ Đề thi các trường chuyên
+                                                    ◾ Đề thi Bộ GD&ĐT
+                                                    ◾ Đáp án chi tiết và lời giải
+                                                    
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+
+                            <div class="tab-pane fade" id="tab2-3" role="tabpanel" aria-describedby="tab2-3-tab">
+                                <div class="accordion" id="accordion2c">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="heading2c1">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2c1" aria-expanded="false" aria-controls="collapse2c1">
+                                            Module 1: Dao động cơ học (4 tuần)
+                                            </button>
+                                        </h2>
+                                        <div id="collapse2c1" class="accordion-collapse collapse" aria-labelledby="heading2c1">
+                                            <div class="accordion-body">
+                                                <p>
+                                                    ◾ Tuần 1: Dao động điều hòa
+                                                    ◾ Tuần 2: Con lắc lò xo
+                                                    ◾ Tuần 3: Con lắc đơn
+                                                    ◾ Tuần 4: Tổng hợp dao động
+                                                                                                    </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="heading2c2">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2c2" aria-expanded="false" aria-controls="collapse2c2">
+                                            Module 2: Sóng và Điện xoay chiều (6 tuần) 
+                                            </button>
+                                        </h2>
+                                        <div id="collapse2c2" class="accordion-collapse collapse" aria-labelledby="heading2c2">
+                                            <div class="accordion-body">
+                                                <p>
+                                                    ◾ Tuần 5-6: Sóng cơ và Giao thoa
+                                                    ◾ Tuần 7-8: Dòng điện xoay chiều
+                                                    ◾ Tuần 9-10: Mạch RLC và máy biến áp
+                                                    
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="heading2c3">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2c3" aria-expanded="false" aria-controls="collapse2c3">
+                                            Module 3: Quang học và Lượng tử (3 tuần)
+                                            </button>
+                                        </h2>
+                                        <div id="collapse2c3" class="accordion-collapse collapse" aria-labelledby="heading2c3">
+                                            <div class="accordion-body">
+                                                <p>
+                                                    ◾ Tuần 11: Sóng ánh sáng và Giao thoa
+                                                    ◾ Tuần 12: Lượng tử ánh sáng và Quang điện
+                                                    ◾ Tuần 13: Ôn tập chuyên đề Quang học
+                                                    
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="heading2c4">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2c4" aria-expanded="false" aria-controls="collapse2c4">
+                                            Module 4: Luyện tập và Thi thử (3 tuần)
+                                            </button>
+                                        </h2>
+                                        <div id="collapse2c4" class="accordion-collapse collapse" aria-labelledby="heading2c4">
+                                            <div class="accordion-body">
+                                                <p>
+                                                    ◾ Tuần 14: Ôn tập tổng hợp các chuyện đề
+                                                    ◾ Tuần 15: Thi thử và Phân tích đề thi
+                                                    ◾ Tuần 16: Luyện đề THPT Quốc gia và hoàn thiện
+                                                    
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="tab-pane fade" id="tab2-4" role="tabpanel" aria-describedby="tab2-4-tab">
+                                <div class="accordion" id="accordion2d">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="heading2d1">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2d1" aria-expanded="false" aria-controls="collapse2d1">
+                                            Bài tập trực tuyến (30%)
+                                            </button>
+                                        </h2>
+                                        <div id="collapse2d1" class="accordion-collapse collapse" aria-labelledby="heading2d1">
+                                            <div class="accordion-body">
+                                                <p>
+                                                    ◾ Quiz sau mỗi bài học
+                                                    ◾ Bài tập về nhà tự động chấm
+                                                    ◾ Thảo luận trong diễn đàn
+
+                                                                                                    </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="heading2d2">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2d2" aria-expanded="false" aria-controls="collapse2d2">
+                                            Kiểm tra giữa khóa (35%)
+                                            </button>
+                                        </h2>
+                                        <div id="collapse2d2" class="accordion-collapse collapse" aria-labelledby="heading2d2">
+                                            <div class="accordion-body">
+                                                <p>
+                                                    ◾ Kiểm tra trắc nghiệm online
+                                                    ◾ Bài tập tự luận có giải thích
+                                                    ◾ Đánh giá quá trình học tập
+                                                    
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="heading2d3">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2d3" aria-expanded="false" aria-controls="collapse2d3">
+                                            Thi cuối khóa (35%)
+                                            </button>
+                                        </h2>
+                                        <div id="collapse2d3" class="accordion-collapse collapse" aria-labelledby="heading2d3">
+                                            <div class="accordion-body">
+                                                <p>
+                                                    ◾ Đề thi THPT Quốc gia
+                                                    ◾ Phân tích kết quả chi tiết
+                                                    ◾ Chứng chỉ hoàn thành khóa học
+                                                    
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            
+
+            <!-- Phần lộ trình học tập -->
+            
+
+            <div class="container py-5">
+                <h3 class="text-center mb-5 fw-bold display-1"><span class="text-primary">GIÁ TRỊ</span> TỪ KHÓA HỌC</h3>
+
+                <div class="timeline">
+
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                            <h2 class="timeline-title">Vững Vàng Kiến Thức Cốt Lõi</h2>
+                            <ul class="timeline-list">
+                                <li> Nắm chắc lý thuyết trọng tâm chương trình Toán 12</li>
+                                <li> Thành thạo phương pháp giải từng dạng bài</li>
+                                <li> Ứng dụng linh hoạt công thức vào bài tập thực tế</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item right">
+                        <div class="timeline-content">
+                            <h2 class="timeline-title">Bí Quyết Đạt Điểm Cao</h2>
+                            <ul class="timeline-list">
+                                <li>Luyện đề thi chuẩn cấu trúc Bộ GD&amp;ĐT</li>
+                                <li>Nhận diện 15+ dạng bài "ăn điểm" trong đề thi</li>
+                                <li>Chiến thuật phân bổ thời gian làm bài tối ưu</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                            <h2 class="timeline-title">Chinh Phục Bài Toán Vận Dụng Cao</h2>
+                            <ul class="timeline-list">
+                                <li>Giải quyết bài toán cực trị, tích phân phức tạp</li>
+                                <li>Rèn tư duy giải toán đa chiều</li>
+                                <li>Kỹ thuật trình bày bài thi khoa học, đạt điểm tối đa</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item right">
+                        <div class="timeline-content">
+                            <h2 h2 class="timeline-title">Học Từ Kinh Nghiệm Thực Tế</h2>
+                            <ul class="timeline-list">
+                                <li>Phân tích 50+ đề thi thật các năm</li>
+                                <li>Giải đề thi thử có chấm điểm và nhận xét chi tiết</li>
+                                <li>Cảnh báo 10 lỗi sai thí sinh thường mắc</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                            <h2 class="timeline-title">Tài Liệu &amp; Hỗ Trợ</h2>
+                            <ul class="timeline-list">
+                                <li>Tặng bộ đề thi thử chuẩn cấu trúc Bộ GD&amp;ĐT</li>
+                                <li>Hỏi đáp 24/7 mọi thắc mắc</li>
+                                <li>Video chữa đề chi tiết</li>
+                                <li>Nhận đánh giá năng lực định kỳ</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            
+        </div>
+
+        
+    </main>
+
+    <footer>
+        <section class="footer__content">
+            <div class="footer__left">
+                <div class="footer__logo">
+                    <img src="/4Study_Logo_remove.png" alt="" height="100px" width="150px">
+                </div>
+
+                <p class="footer__description">
+                    Trang web 4Study là một trong những nền tảng ưu việt hỗ
+                    trợ học tập tốt cho các bạn học sinh. Với sự chú tâm về lượng kiến thức,
+                    đảm bảo sự hiểu biết, chúng tôi mong muốn mang đến cho các bạn những trải nghiệm
+                    tốt nhất và đạt hiệu quả cao nhất trong học tập.
+                </p>
+            </div>
+
+            
+
+           
+        </section>
+    </footer>
+</body>
+<script src="/csschung/main.js"></script>
+
+</html>

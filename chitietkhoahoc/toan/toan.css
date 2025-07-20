@@ -1,0 +1,666 @@
+/* Nguoi thuc hien: Nguyễn Tấn Hiệp
+reset css */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border-width: 0;
+    word-wrap: break-word; /*Tự động xuống dòng */
+}
+
+.page-main{
+    min-height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    display: block;
+    background-color: rgba(243 244 246 );
+}
+
+.course{
+    display: grid;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.course-intro{
+    position: relative;
+
+}
+
+.course-banner{
+    background-image: linear-gradient(to left, #11498d, #0e2643); /* Gradient từ xanh đậm sang xanh tối */
+    color: rgb(255 255 255);
+    /* margin-top: 24px; */
+    border-radius: 5px;
+    margin-bottom: 24px;
+}
+
+.container_xl{
+    
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+
+
+.content_xl{
+    padding:52px 0;
+    row-gap: 32px;
+    display: grid;
+    column-gap: 2.5rem; /* khoảng cách giữa các cột */
+
+}
+
+@media (min-width: 73.75rem) {
+    .content_xl {
+        grid-template-columns: 1fr 440px;
+        
+    }
+    .gioithieu{
+        order: 1;
+    }
+    .gioithieu-img{
+        order: 2;
+    }
+}
+
+ @media (max-width:739px){
+     #lotrinh .tabs {
+        display: block;
+
+    }
+
+    #lotrinh .tab {
+        width: 100%;
+        margin-top: 4px;
+        padding: 16px 0;
+        
+    }
+
+    #lotrinh .accordion-header {
+        padding: 16px;
+    }
+
+
+}
+
+.gioithieu{
+    gap: 30px;
+    flex-direction: column;
+    display: flex;
+}
+
+.khung-khoahoc{
+    gap: 12px;
+    flex-direction: column;
+    display: flex;
+}
+
+.ten-khoahoc{
+    font-weight: 7  00;
+    font-size: 30px;
+    line-height: 32px;
+    overflow-wrap: break-word;
+    min-height: 50px;
+    overflow: hidden;
+    color: #fff;
+}
+
+.gioithieu-khoahoc{
+    font-size: 16px;
+    color: rgb(208 213 221);
+    line-height: 28px;
+}
+
+
+.gioithieu-img{
+    gap: 24px;
+    flex-direction: column;
+    display: flex;
+    
+    
+
+}
+
+
+
+.khung-img{
+    position: relative;
+    
+    
+
+}
+
+
+.course-img{
+    max-height: 250px;
+    width: 100%;
+    max-width: 426px;
+    aspect-ratio: 1.5; /* Tỷ lệ khung hình 3:2 */
+    vertical-align: middle;/* Căn giữa theo chiều dọc */
+    object-fit: cover;/* Cắt ảnh để vừa khung */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, .15);
+    border-radius: 5px;
+}
+
+.khoangcach-dangky{
+    gap: 16px;
+    flex-direction: row;
+    display: flex;
+    
+}
+
+/* Hiệu ứng hover cho nút đăng ký */
+.button_dangky:hover, .button_dangky:focus {
+    transform: translateY(-4px); /* Di chuyển lên 4px */
+    box-shadow: 0 4px 0 0 rgba(239, 101, 101, 0.2);/* Đổ bóng màu đỏ */
+}
+
+
+.button_dangky {
+    background-color: #f56060;
+    color: #fff;
+    border: 1px solid #f56060;
+    box-shadow: none;
+    position: relative;
+    font-family: 'Roboto Condensed';
+}
+
+.button_khung {
+    font-size: 1.8rem;
+    padding: 8px 30px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s cubic-bezier(.4,0,.2,1), box-shadow 0.2s cubic-bezier(.4,0,.2,1); /* chuyển động theo đường cong cubic-bezier trong 0.2s */
+    outline: none;
+    line-height: 24px;
+    font-weight: 500;
+
+}
+
+
+.tacgia{
+    gap: 4px;
+    display: flex;
+    font-size: 16px;
+
+}
+
+.tacgia span{
+    color: #8899A8;
+}
+
+.tacgia a{
+    color: #7289F3;
+    text-decoration: none;
+}
+
+.khung2{
+    border-top: 2px solid #ccc;
+}
+
+.content2 {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+.content2-kc {
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    max-width: 900px;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    padding-inline-start:16px;
+    padding-inline-end:16px;
+    color: #333;
+}
+
+.content2-td {
+    font-weight: 700;
+    margin-bottom: 32px;
+    text-align: center;
+    font-size: 48px;
+}
+
+.content2-box{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 14px;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.content2-box i {
+    font-size: 24px;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.content2-box-nd {
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.khung-sotay-kc{
+    padding: 64px 0;
+    background-color: #fff;
+}
+
+
+
+.khung-sotay{
+    width: 100%;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    max-width: 1280px;
+    padding-inline-start: 32px;
+    padding-inline-end: 32px;
+    padding: 32px 0;
+    
+}
+
+.sotay-nd {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    
+}
+
+@media screen and (min-width: 768px) {
+    .sotay-nd {
+        flex-direction: row;
+        gap: 40px;
+    }
+    .khung-sotay {
+        padding: 0 32px;
+    }
+}
+
+.sotay-nd-kc{
+    flex: 1;
+}
+
+@media screen and (min-width: 768px) {
+    .css-.sotay-nd-kc {
+        padding-right: 24px;
+    }
+}
+
+.sotay-nd-t1{
+    font-size: 14px;
+    font-weight: 600;
+    color: #718096;
+    margin-bottom: 8px;
+}
+
+.sotay-nd-td{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    line-height: 1.2;
+    color: #333;
+}
+
+@media screen and (min-width: 768px) {
+    .sotay-nd-td {
+        font-size: 70px;
+    }
+}
+
+.sotay-nd-t2 {
+    font-size: 18px;
+    margin-bottom: 24px;
+    color: #333;
+
+}
+
+@media screen and (min-width: 768px) {
+    .sotay-nd-t2 {
+        font-size: 24px;
+    }
+}
+
+.sotay-nd-khung-img{
+    width: 100%;
+    position: relative;
+    text-align: center;
+    padding: 16px 0;
+    flex: 1;
+}
+
+@media screen and (min-width: 768px) {
+    .sotay-nd-khung-img {
+        padding-inline-start: 24px;
+        padding-inline-end: 24px;
+    }
+}
+
+.sotay-nd-img {
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+@media screen and (min-width: 768px) {
+    .sotay-nd-img {
+        height: 400px;
+        overflow: visible; /* Hiển thị nội dung tràn (cho hiệu ứng 3D) */
+        box-shadow: none;
+    }
+}
+
+
+.sotay-nd-img img {
+    height: 100%;
+    width: 100%;
+    border: 2px solid #57534E;
+    border-radius: 5px;
+    object-fit: contain; /* Giữ tỷ lệ ảnh */
+    object-position: center; /* Căn giữa ảnh */
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+.sotay-nd-img img:hover{
+    transform: none; /* Không có hiệu ứng transform */
+}
+
+@media screen and (min-width: 768px) {
+    .sotay-nd-img img:hover {
+        /* Hiệu ứng 3D khi hover: xoay và phóng to */
+        transform: perspective(1200px) rotateY(-12deg) rotateX(3deg) scale(1.08);
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .sotay-nd-img img {
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        
+        transform: perspective(1200px) rotateY(-15deg) rotateX(5deg) scale(1.05);
+    }
+}
+
+.hd-td {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 32px;
+    font-size: 48px;
+    color: #333
+;
+
+}
+
+.hd-td span{
+    color: #0d47a1;
+}
+
+.blog-body p {
+    margin-bottom: 16px;
+    white-space: pre-line;
+    letter-spacing: 0.016px;
+    font-size: 32px;
+    font-weight: 600;
+    color: #333
+}
+
+.blog-body ul {
+    margin-inline-start: 32px;
+    margin-bottom: 32px;
+    
+}
+
+.blog-body ul li {
+    margin-top: 4px;
+    font-size: 20px;
+    color: rgb(45, 55, 72);
+    
+}
+
+#lotrinh{
+    background-color: #fff;
+}
+
+
+
+#lotrinh .tieude{
+    display: inline-block;
+    vertical-align: top;
+    align-items: center;
+    max-width: 100%;
+    line-height: 1.2;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
+    background-color: #000;
+    border-radius: 5px;
+    min-height: 24px;
+    min-width: 24px;
+    padding-inline-start: 8px;
+    padding-inline-end: 8px;
+    margin: 0 0 8px;
+    padding: 8px;
+}
+
+#lotrinh .container-lt {
+    position: relative;
+    display: block;
+    border-width: 1px;
+    border-color: #000;
+    border-radius: 5px;
+    margin: 32px;
+    border-style: solid;
+}  
+
+#lotrinh .tabs{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    flex-direction: row;
+    border-bottom: 2px solid #333;
+    
+    
+}
+
+#lotrinh .tab{
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    border-bottom: 2px solid transparent;
+    padding: 8px 16px;
+    margin-right: 32px;
+    background-color: #ccc;
+    cursor: pointer;
+    
+
+}
+
+#lotrinh .tab.active {
+    color: #0d47a1;
+    border: 1px solid #0d47a1;
+    border-bottom: none;
+    border-radius: 6px 6px 0 0;
+    font-weight: 600;
+}
+
+#lotrinh .box-content{
+    width: 100%;
+}
+
+#lotrinh .tab-content {
+    padding: 16px;
+    
+}
+
+#lotrinh .accordion {
+    border-bottom: 1px solid #ccc;
+}
+
+#lotrinh .accordion-item{
+    border-top: 1px solid #ccc;
+    
+ 
+}
+
+#lotrinh .accordion-item .accordion-header:hover{
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+#lotrinh .accordion-header{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0;
+    font-weight: 600;
+    font-size: 16px;
+    
+}
+
+#lotrinh .accordion-icon{
+    transition: transform 0.3s ease;
+}
+
+#lotrinh .accordion-body{
+    padding: 8px 16px 16px;
+}
+
+#lotrinh p {
+    white-space: pre-line;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #555;
+}
+
+.accordion-icon.rotate {
+    transform: rotate(180deg);
+}
+
+@media (min-width:1024px){
+
+    
+
+}
+
+@media (min-width:740px) and (max-width:1024px){
+    .khung-sotay{
+        padding: 0 16px;
+    }
+}
+
+@media (max-width: 739px) {
+    .khung-sotay{
+        padding: 32px 16px;
+    }
+
+    .content2-td {
+        font-size: 28px;
+    }
+    
+    .content2-box{
+        margin-bottom: -5px;
+        gap: 3px;
+
+    }
+    .content2-box i,
+    .content2-box-nd{
+        font-size: 14px;
+    }
+
+    .hd-td{
+        font-size: 30px;
+    }
+
+ 
+
+    #lotrinh .container-lt{
+        margin: 32px 0;
+    }
+
+    #lotrinh .tab{
+        margin-right: 16px;
+    }
+
+    .blog-body p{
+        font-size: 20px;
+    }
+
+    .blog-body ul li{
+        font-size: 16px;
+    }
+
+ 
+
+    
+
+ 
+
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
